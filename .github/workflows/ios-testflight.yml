@@ -1,0 +1,217 @@
+# Flix Atış -> TestFlight. Actions sekmesi > "iOS TestFlight" > Run workflow.
+# Elle imzalama (Apple Distribution sertifikası + App Store provisioning profile): Xcode'un bulut imzalamasını
+# hiç kullanmaz, bu yüzden "Cloud signing permission error" bir daha çıkmaz.
+# Gerekli secrets (Settings > Secrets and variables > Actions), nasıl oluşturulacağı: TESTFLIGHT.md
+#   APPLE_TEAM_ID, APP_STORE_CONNECT_KEY_ID, APP_STORE_CONNECT_ISSUER_ID, APP_STORE_CONNECT_PRIVATE_KEY,
+#   IOS_DIST_CERT_P12_BASE64, IOS_DIST_CERT_PASSWORD, IOS_PROVISION_PROFILE_BASE64
+name: iOS TestFlight
+run-name: Flix Atış ${{ inputs.version }} -> TestFlight
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'App Store sürümü (örn. 1.5.1)'
+        required: true
+        default: '1.5.1'
+      test_ads:
+        description: 'Gerçek reklam yerine Google test reklamları (sadece deneme için)'
+        type: boolean
+        default: false
+concurrency:
+  group: testflight
+  cancel-in-progress: false
+jobs:
+  testflight:
+    runs-on: macos-15
+    timeout-minutes: 90
+    env:
+      BUNDLE_ID: com.flixtoys.atis
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+    steps:
+      - name: Secrets kontrolü
+        env:
+          P8: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
+          P12: ${{ secrets.IOS_DIST_CERT_P12_BASE64 }}
+          P12_PW: ${{ secrets.IOS_DIST_CERT_PASSWORD }}
+          PROF: ${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}
+        run: |
+          miss=0
+          for v in APPLE_TEAM_ID ASC_KEY_ID ASC_ISSUER_ID P8 P12 P12_PW PROF; do
+            if [ -z "${!v}" ]; then miss=1; echo "::error::Eksik secret: $v (isimler ve nasıl oluşturulacağı TESTFLIGHT.md'de)"; fi
+          done
+          [ "$miss" = 0 ] || exit 1
+          [[ "$APPLE_TEAM_ID" =~ ^[A-Z0-9]{10}$ ]] || { echo "::error::APPLE_TEAM_ID 10 karakter olmalı (developer.apple.com > Membership)"; exit 1; }
+          echo "Tüm secrets tanımlı."
+
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Xcode ve CocoaPods
+        run: |
+          X=$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)
+          sudo xcode-select -s "$X"
+          xcodebuild -version
+          command -v pod >/dev/null || sudo gem install cocoapods --no-document
+          pod --version
+          pip install -q pillow
+
+      - name: Sertifika ve provisioning profile'ı kur
+        env:
+          P12: ${{ secrets.IOS_DIST_CERT_P12_BASE64 }}
+          P12_PW: ${{ secrets.IOS_DIST_CERT_PASSWORD }}
+          PROF: ${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+          KC="$RUNNER_TEMP/signing.keychain-db"; KCPW=$(openssl rand -hex 24)
+          echo "$P12" | base64 --decode > "$RUNNER_TEMP/dist.p12"
+          echo "$PROF" | base64 --decode > "$RUNNER_TEMP/app.mobileprovision"
+          security create-keychain -p "$KCPW" "$KC"
+          security set-keychain-settings -lut 21600 "$KC"
+          security unlock-keychain -p "$KCPW" "$KC"
+          security import "$RUNNER_TEMP/dist.p12" -P "$P12_PW" -A -t cert -f pkcs12 -k "$KC" \
+            || { echo "::error::Sertifika açılamadı: IOS_DIST_CERT_P12_BASE64 ya da IOS_DIST_CERT_PASSWORD yanlış"; exit 1; }
+          security set-key-partition-list -S apple-tool:,apple: -k "$KCPW" "$KC" >/dev/null
+          security list-keychains -d user -s "$KC" $(security list-keychains -d user | tr -d '"')
+          ID_LINE=$(security find-identity -v -p codesigning "$KC" | grep -E 'Apple Distribution|iPhone Distribution' | head -1 || true)
+          [ -n "$ID_LINE" ] || { echo "::error::p12 içinde 'Apple Distribution' sertifikası yok (Development sertifikası olabilir)"; security find-identity -v -p codesigning "$KC"; exit 1; }
+          CERT_SHA=$(echo "$ID_LINE" | awk '{print $2}'); CERT_NAME=$(echo "$ID_LINE" | sed -E 's/.*"(.*)"/\1/')
+          # profile details
+          security cms -D -i "$RUNNER_TEMP/app.mobileprovision" > "$RUNNER_TEMP/prof.plist" \
+            || { echo "::error::IOS_PROVISION_PROFILE_BASE64 geçerli bir .mobileprovision değil"; exit 1; }
+          P() { /usr/libexec/PlistBuddy -c "Print :$1" "$RUNNER_TEMP/prof.plist" 2>/dev/null || true; }
+          PNAME=$(P Name); PUUID=$(P UUID); PTEAM=$(P TeamIdentifier:0); PAPP=$(P Entitlements:application-identifier); PEXP=$(P ExpirationDate)
+          echo "Sertifika: $CERT_NAME"
+          echo "Profil: $PNAME | uygulama $PAPP | takım $PTEAM | bitiş $PEXP"
+          ok=1
+          [ "$PAPP" = "$PTEAM.$BUNDLE_ID" ] || { echo "::error::Profil $BUNDLE_ID için değil ($PAPP). App Store profili com.flixtoys.atis için oluşturulmalı."; ok=0; }
+          [ "$PTEAM" = "$APPLE_TEAM_ID" ] || { echo "::error::Profilin takımı ($PTEAM) APPLE_TEAM_ID ($APPLE_TEAM_ID) ile aynı değil."; ok=0; }
+          if P ProvisionedDevices | grep -q .; then echo "::error::Bu bir Development/Ad Hoc profili. 'App Store Connect' (Distribution) türünde profil gerekli."; ok=0; fi
+          # the certificate in the p12 must be one of the profile's certificates
+          n=0; found=0
+          while /usr/libexec/PlistBuddy -c "Print :DeveloperCertificates:$n" "$RUNNER_TEMP/prof.plist" >/dev/null 2>&1; do
+            /usr/libexec/PlistBuddy -c "Print :DeveloperCertificates:$n" "$RUNNER_TEMP/prof.plist" > "$RUNNER_TEMP/c.der"
+            s=$(openssl dgst -sha1 "$RUNNER_TEMP/c.der" | awk '{print toupper($NF)}'); [ "$s" = "$CERT_SHA" ] && found=1; n=$((n+1))
+          done
+          [ "$found" = 1 ] || { echo "::error::Profil bu sertifikayla oluşturulmamış. Profili düzenleyip bu Apple Distribution sertifikasını seç, yeniden indir."; ok=0; }
+          [ "$ok" = 1 ] || exit 1
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          cp "$RUNNER_TEMP/app.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/$PUUID.mobileprovision"
+          rm -f "$RUNNER_TEMP/dist.p12"
+          { echo "PROFILE_NAME=$PNAME"; echo "PROFILE_UUID=$PUUID"; echo "CERT_SHA=$CERT_SHA"; echo "SIGN_KC=$KC"; } >> "$GITHUB_ENV"
+          echo "İmzalama hazır."
+
+      - name: Oyun ve iOS projesi (npm ci + npm run sync)
+        working-directory: app
+        env:
+          ADS_MODE: ${{ inputs.test_ads && 'test' || 'real' }}
+          APP_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          # unique, always increasing build number: date + time (UTC) + run attempt
+          BN="$(date -u +%y%m%d%H%M)${{ github.run_attempt }}"
+          echo "BUILD_NUMBER=$BN" >> "$GITHUB_ENV"; export BUILD_NUMBER="$BN"
+          npm ci
+          npm run build
+          [ -d ios ] || npx cap add ios --packagemanager CocoaPods
+          npm run sync
+          echo "Sürüm $APP_VERSION, build $BN, reklam modu $ADS_MODE"
+
+      - name: App hedefini elle imzalamaya ayarla
+        working-directory: app
+        run: |
+          python3 - <<'PY'
+          import os, re
+          p = 'ios/App/App.xcodeproj/project.pbxproj'; s = open(p).read()
+          team, prof, bid = os.environ['APPLE_TEAM_ID'], os.environ['PROFILE_NAME'], os.environ['BUNDLE_ID']
+          def fix(m):
+              b = m.group(0)
+              if 'PRODUCT_BUNDLE_IDENTIFIER' not in b: return b
+              for k in ('CODE_SIGN_STYLE', 'DEVELOPMENT_TEAM', 'CODE_SIGN_IDENTITY', '"CODE_SIGN_IDENTITY[sdk=iphoneos*]"', 'PROVISIONING_PROFILE_SPECIFIER', 'PROVISIONING_PROFILE'):
+                  b = re.sub(r'\n\s*%s = [^;]*;' % re.escape(k), '', b)
+              b = re.sub(r'PRODUCT_BUNDLE_IDENTIFIER = [^;]*;', 'PRODUCT_BUNDLE_IDENTIFIER = %s;' % bid, b)
+              add = ('CODE_SIGN_STYLE = Manual;\n\t\t\t\tDEVELOPMENT_TEAM = %s;\n\t\t\t\t"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";\n'
+                     '\t\t\t\tCODE_SIGN_IDENTITY = "Apple Distribution";\n\t\t\t\tPROVISIONING_PROFILE_SPECIFIER = "%s";\n\t\t\t\t') % (team, prof)
+              return b.replace('buildSettings = {\n\t\t\t\t', 'buildSettings = {\n\t\t\t\t' + add, 1)
+          s2 = re.sub(r'buildSettings = \{.*?\n\t\t\t\};', fix, s, flags=re.S)
+          n = s2.count('PROVISIONING_PROFILE_SPECIFIER = "%s"' % prof)
+          assert n >= 1, 'App target not found in project.pbxproj'
+          open(p, 'w').write(s2); print('App target manual signing set in %d build configurations' % n)
+          PY
+
+      - name: Archive (Release)
+        working-directory: app
+        run: |
+          set -o pipefail
+          xcodebuild -workspace ios/App/App.xcworkspace -scheme App -configuration Release \
+            -destination 'generic/platform=iOS' -archivePath "$RUNNER_TEMP/App.xcarchive" \
+            -derivedDataPath "$RUNNER_TEMP/dd" OTHER_CODE_SIGN_FLAGS="--keychain $SIGN_KC" \
+            archive 2>&1 | tee "$RUNNER_TEMP/archive.log" | grep -E 'error:|warning: .*sign|\*\* ARCHIVE' || true
+          [ -d "$RUNNER_TEMP/App.xcarchive/Products/Applications" ] || { echo "::error::Archive başarısız. Ayrıntı: 'build-logs' artifact'ındaki archive.log"; tail -n 60 "$RUNNER_TEMP/archive.log"; exit 1; }
+          APP=$(ls -d "$RUNNER_TEMP"/App.xcarchive/Products/Applications/*.app)
+          codesign -dvv "$APP" 2>&1 | grep -E '^(Authority|TeamIdentifier)=' | head -3
+
+      - name: IPA oluştur
+        run: |
+          set -o pipefail
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0"><dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>export</string>
+            <key>teamID</key><string>$APPLE_TEAM_ID</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>signingCertificate</key><string>$CERT_SHA</string>
+            <key>provisioningProfiles</key><dict><key>$BUNDLE_ID</key><string>$PROFILE_UUID</string></dict>
+            <key>uploadSymbols</key><true/>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+          </dict></plist>
+          PLIST
+          xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/App.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" -exportPath "$RUNNER_TEMP/export" 2>&1 | tee "$RUNNER_TEMP/export.log" | tail -n 25
+          IPA=$(ls "$RUNNER_TEMP"/export/*.ipa 2>/dev/null | head -1)
+          [ -n "$IPA" ] || { echo "::error::IPA oluşmadı. Ayrıntı: build-logs artifact'ındaki export.log"; exit 1; }
+          echo "IPA=$IPA" >> "$GITHUB_ENV"; ls -la "$IPA"
+
+      - name: TestFlight'a yükle (App Store Connect API anahtarı)
+        env:
+          P8: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
+        run: |
+          set -o pipefail
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          printf '%s\n' "$P8" > "$HOME/.appstoreconnect/private_keys/AuthKey_$ASC_KEY_ID.p8"
+          xcrun altool --upload-app --type ios --file "$IPA" --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID" --output-format normal 2>&1 | tee "$RUNNER_TEMP/upload.log"
+          if grep -qiE 'UPLOAD SUCCEEDED|No errors uploading' "$RUNNER_TEMP/upload.log"; then
+            echo "### ✅ Flix Atış ${{ inputs.version }} (build $BUILD_NUMBER) TestFlight'a yüklendi" >> "$GITHUB_STEP_SUMMARY"
+            echo "Apple işledikten sonra (genelde 10-30 dk) App Store Connect > TestFlight'ta görünür." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::Yükleme başarısız. Yukarıdaki altool çıktısına bak (sürüm numarası daha önce kullanıldıysa version'ı artır)."
+            exit 1
+          fi
+
+      - name: Logları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            ${{ runner.temp }}/archive.log
+            ${{ runner.temp }}/export.log
+            ${{ runner.temp }}/upload.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Temizlik
+        if: always()
+        run: |
+          [ -n "${SIGN_KC:-}" ] && security delete-keychain "$SIGN_KC" 2>/dev/null || true
+          rm -rf "$HOME/.appstoreconnect/private_keys" "$RUNNER_TEMP/app.mobileprovision" "$RUNNER_TEMP/prof.plist"
+          [ "${{ job.status }}" = success ] || echo "### ❌ Build başarısız: kırmızı adımın logunu ve build-logs artifact'ını aç" >> "$GITHUB_STEP_SUMMARY"

@@ -8,3 +8,6 @@ FLIX'i fırlat, süzül, kovaya sok! Golf usulü 3D atış oyunu: 4 dünya (Soka
 - `app/`: iOS uygulaması (Capacitor 8, paket kimliği com.flixtoys.atis).
 
 FLIX TOYS · flixtoysofficial.com
+
+## TestFlight
+Actions > **iOS TestFlight** > Run workflow. Kurulum ve gerekli secrets: [TESTFLIGHT.md](TESTFLIGHT.md)
