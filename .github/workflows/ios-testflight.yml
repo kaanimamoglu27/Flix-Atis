@@ -94,13 +94,29 @@ jobs:
           [ "$PAPP" = "$PTEAM.$BUNDLE_ID" ] || { echo "::error::Profil $BUNDLE_ID için değil ($PAPP). App Store profili com.flixtoys.atis için oluşturulmalı."; ok=0; }
           [ "$PTEAM" = "$APPLE_TEAM_ID" ] || { echo "::error::Profilin takımı ($PTEAM) APPLE_TEAM_ID ($APPLE_TEAM_ID) ile aynı değil."; ok=0; }
           if P ProvisionedDevices | grep -q .; then echo "::error::Bu bir Development/Ad Hoc profili. 'App Store Connect' (Distribution) türünde profil gerekli."; ok=0; fi
-          # the certificate in the p12 must be one of the profile's certificates
-          n=0; found=0
-          while /usr/libexec/PlistBuddy -c "Print :DeveloperCertificates:$n" "$RUNNER_TEMP/prof.plist" >/dev/null 2>&1; do
-            /usr/libexec/PlistBuddy -c "Print :DeveloperCertificates:$n" "$RUNNER_TEMP/prof.plist" > "$RUNNER_TEMP/c.der"
-            s=$(openssl dgst -sha1 "$RUNNER_TEMP/c.der" | awk '{print toupper($NF)}'); [ "$s" = "$CERT_SHA" ] && found=1; n=$((n+1))
-          done
-          [ "$found" = 1 ] || { echo "::error::Profil bu sertifikayla oluşturulmamış. Profili düzenleyip bu Apple Distribution sertifikasını seç, yeniden indir."; ok=0; }
+          # Compare the actual DER bytes embedded in the provisioning profile.
+          # PlistBuddy prints NSData as text, so hashing its stdout gives a false mismatch.
+          if ! PROFILE_PLIST="$RUNNER_TEMP/prof.plist" CERT_SHA="$CERT_SHA" python3 - <<'PY'
+          import hashlib
+          import os
+          import plistlib
+          import sys
+          
+          with open(os.environ["PROFILE_PLIST"], "rb") as f:
+              profile = plistlib.load(f)
+          certificates = profile.get("DeveloperCertificates", [])
+          expected = os.environ["CERT_SHA"].replace(":", "").strip().upper()
+          matches = [
+              hashlib.sha1(cert).hexdigest().upper() == expected
+              for cert in certificates
+          ]
+          print(f"Profilde {len(certificates)} distribution sertifikası bulundu; SHA-1 eşleşmesi: {any(matches)}")
+          sys.exit(0 if any(matches) else 1)
+          PY
+          then
+            echo "::error::Provisioning profile içindeki sertifika p12 sertifikasıyla eşleşmiyor. İmzalama sertifikasını ve profili kontrol edin."
+            ok=0
+          fi
           [ "$ok" = 1 ] || exit 1
           mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
           cp "$RUNNER_TEMP/app.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/$PUUID.mobileprovision"
