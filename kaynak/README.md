@@ -1,5 +1,8 @@
 Flix Atış kaynak dosyaları.
 
+v11 (1.5.3+): Ayarlar'a "Gizlilik Seçenekleri" satırı (Google UMP privacy options; sadece uygulamada ve Google gerekli derse görünür, Google'ın rıza formunu yeniden açar).
+Derlenmiş oyuna uygulanır: `python3 patch11.py` (../index.html'i yerinde yamalar, iki kez çalıştırılırsa bir şey yapmaz). Reklam tarafı app/www/ads.js (privacyOptionsRequired / showPrivacyOptions).
+
 v10.1 (1.5.3, 2026-11-13 genel test): 180 bölüm x 3 nişan seviyesi botla oynandı (simtest.py + t70.js: hızlı simülasyon, render yok).
 Düzeltmeler (patch10.py sonu): hayvanlar (güvercin, kedi, köpek) artık FLIX'i sektirip çatıdan düşürmüyor (güvercin etkisiz, kedi/köpek hafif yavaşlatır, sadece insanlar sektirir;
 Çatı Katı mükemmel atışla bile geçilemiyordu). Bölüm değişince eski bölümün geometri/malzeme/dokuları serbest bırakılıyor (disposeTree; önceden her bölümde ~60 doku sızıyordu).

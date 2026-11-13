@@ -9,6 +9,9 @@
      FlixAds.rewardedReady()    -> true when a rewarded ad is loaded
      FlixAds.setAdsRemoved(on)  -> "No Ads" bought / restored: interstitial and banner stop for good
      FlixAds.setScreen(name)    -> 'menu' | 'game' | 'over': the banner (if enabled) only shows on the menu
+     FlixAds.privacyOptionsRequired() -> true when Google's consent message applies (EEA / UK / CH): Settings then shows "Gizlilik Seçenekleri"
+     FlixAds.showPrivacyOptions() -> reopens Google's consent form so the player can change or withdraw consent
+   A 'flixprivacy' event fires on window once the consent status is known.
    Every call resolves and never throws; a full-screen ad resolves only after it is closed. */
 (function () {
   const Cap = window.Capacitor;
@@ -41,7 +44,27 @@
   for (const k in fmt) Object.assign(fmt[k], {state: 'idle', loadedAt: 0, p: null, fails: 0, timer: 0, unit: ''});
 
   let lastReward = 0, started = false, canRequest = true, removed = false, showing = false, screen = 'menu', bannerOn = false, bannerMade = false;
+  let privacyRequired = false;
   const startedP = init();
+
+  // Google UMP consent: remembers whether ads may be requested and whether the privacy options entry point must be shown
+  function consentInfo(c) {
+    if (!c) return;
+    canRequest = c.canRequestAds !== false;
+    privacyRequired = c.privacyOptionsRequirementStatus === 'REQUIRED';
+  }
+  function announcePrivacy() { try { window.dispatchEvent(new Event('flixprivacy')); } catch (e) {} }
+
+  // Reopens Google's consent form (EEA / UK / CH). Resolves after it is closed; ads start or stop to match the new choice.
+  async function showPrivacyOptions() {
+    const could = canRequest;
+    try { await A.showPrivacyOptionsForm(); } catch (e) { console.warn('privacy options', e && e.message); }
+    try { consentInfo(await A.requestConsentInfo()); } catch (e) {}
+    announcePrivacy();
+    if (started && canRequest && !could) { load('rewarded'); load('inter'); syncBanner(); }
+    if (!canRequest) hideBanner();
+    return true;
+  }
 
   async function init() {
     try {
@@ -51,8 +74,9 @@
     try {
       let c = await A.requestConsentInfo();
       if (c && c.isConsentFormAvailable && c.status === 'REQUIRED') c = await A.showConsentForm();
-      if (c && c.canRequestAds === false) canRequest = false;
+      consentInfo(c);
     } catch (e) {}
+    announcePrivacy();
     if (ios && CFG.requestTracking) {
       try { const t = await A.trackingAuthorizationStatus(); if (t && t.status === 'notDetermined') await A.requestTrackingAuthorization(); } catch (e) {}
     }
@@ -160,6 +184,8 @@
       if (removed) { clearTimeout(fmt.inter.timer); hideBanner(); }
       else { load('inter'); syncBanner(); }
     },
-    setScreen(name) { screen = name; syncBanner(); }
+    setScreen(name) { screen = name; syncBanner(); },
+    privacyOptionsRequired: () => privacyRequired,
+    showPrivacyOptions
   };
 })();
