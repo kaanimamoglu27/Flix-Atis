@@ -338,6 +338,7 @@ button{font-family:Rubik,sans-serif;touch-action:manipulation;cursor:pointer;bor
     <button class="srow" id="vibRow"><span>Titreşim</span><span id="vibT">Açık</span></button>
     <button class="srow link" id="adsRow"><span>Reklamlar<small>Reklamsız paket dükkânda</small></span><span id="adsT">Açık</span></button>
     <button class="srow link" id="restRow" hidden><span>Satın alımlar<small>Başka cihazdan aldıkların</small></span><span id="restT">Geri yükle</span></button>
+    <button class="srow link" id="privRow" hidden><span>Gizlilik Seçenekleri<small>Privacy Options · reklam izinleri</small></span><span id="privT">Aç</span></button>
     <button class="srow link" data-flixlegal="legal"><span>Yasal Bilgiler<small>Legal &amp; Information</small></span><span>Aç</span></button>
     <button class="srow link" data-flixlegal="about"><span>Hakkında<small>About · Credits</small></span><span>Aç</span></button>
     <div class="ver">Flix Atış 1.2 · FLIX TOYS</div></div>
@@ -3048,5 +3049,19 @@ resize(); openHome(); requestAnimationFrame(frame);
   };
 })();
 FlixLegal.init({"game": "atis", "name": "Flix Atış", "theme": {"font": "Rubik,system-ui,sans-serif", "head": "'Barlow Condensed',Impact,sans-serif", "ink": "#022753", "card": "#fff8ea", "soft": "#fff", "accent": "#022753", "accentInk": "#fff", "btn": "#ffc20e", "btnInk": "#022753", "shadow": "rgba(2,39,83,.35)", "border": "3px solid #022753", "line": "rgba(2,39,83,.3)", "link": "#e22511"}, "oss": ["three.js (MIT)", "Capacitor (MIT)", "cordova-plugin-purchase (MIT)", "@capacitor-community/admob (MIT) · Google Mobile Ads SDK", "Barlow Condensed, Rubik, Orbitron (SIL OFL 1.1)"]});
+</script>
+<script>/* FLIX privacy options (v11): Google UMP entry point, app only */
+(function () {
+  var row = document.getElementById('privRow'), lab = document.getElementById('privT');
+  if (!row) return;
+  function sync() { var A = window.FlixAds; row.hidden = !(A && A.privacyOptionsRequired && A.privacyOptionsRequired()); }
+  window.addEventListener('flixprivacy', sync);
+  sync();
+  row.addEventListener('click', function () {
+    var A = window.FlixAds; if (!A || !A.showPrivacyOptions || lab.textContent === '...') return;
+    lab.textContent = '...';
+    A.showPrivacyOptions().then(function () { lab.textContent = 'Aç'; sync(); }, function () { lab.textContent = 'Aç'; });
+  });
+})();
 </script>
 </body></html>

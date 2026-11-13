@@ -1,5 +1,8 @@
 Flix Atış kaynak dosyaları.
 
+v11 (1.5.1 TestFlight): Ayarlar'a "Gizlilik Seçenekleri" satırı (Google UMP privacy options; sadece uygulamada ve Google gerekli derse görünür, Google'ın rıza formunu yeniden açar).
+Derlenmiş oyuna uygulanır: `python3 patch11.py` (../index.html'i yerinde yamalar, iki kez çalıştırılırsa bir şey yapmaz). Reklam tarafı app/www/ads.js (privacyOptionsRequired / showPrivacyOptions).
+
 v10 (1.5.2): çamaşır ipleri artık FLIX'i durdurmuyor, sadece yavaşlatıyor (kind 'slow': her ipte bir kez hız x0.72, yukarı hız en fazla 1.5, içinden geçer, hışırtı sesi).
 Dükkân vitrinleri dükkânın türüne göre çiziliyor (shops10.js: shopKind ada göre 18 tür; eczane = beyaz raflar, ilaç kutuları, yeşil haç, kırmızı tabela ve "E" amblemi;
 fırın simit/ekmek, kasap asılı et, dönerci döner, kafe çay bardağı/fincan, berber ayna/koltuk, oyuncakçı ayıcık/top/FLIX, nalbur alet panosu, manav kasalar,

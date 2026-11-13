@@ -20,7 +20,7 @@ Başlamadan önce şunları da kontrol ediyor ve sorun varsa Türkçe hata yazı
 
 ## Gerekli GitHub Secrets (7 tane)
 
-Secret'ları şuraya gir: GitHub > **Flix-At-** reposu > **Settings** > **Secrets and variables** > **Actions** > **New repository secret**. İsimler birebir aynı olmalı.
+Secret'ları şuraya gir: GitHub > **Flix-Atis** reposu > **Settings** > **Secrets and variables** > **Actions** > **New repository secret**. İsimler birebir aynı olmalı.
 
 | Secret adı | Ne |
 |---|---|
@@ -76,4 +76,4 @@ Profil 1 yıl geçerlidir. Süresi dolunca ya da sertifikayı yenilersen profili
 ## Bir şey ters giderse
 - **Kırmızı adım:** Actions'ta kırmızı adıma tıkla. Hata mesajı Türkçe, neyin eksik ya da yanlış olduğunu söyler.
 - **Ayrıntılı loglar:** Çalıştırma sayfasının altındaki **build-logs** dosyasında archive, export ve upload logları var.
-- **App Store Connect'te uygulama kaydı yoksa:** Yükleme "app not found" der. App Store Connect > **Uygulamalar** > **+** > Yeni Uygulama ile ekle. Ad **Flix Atış**, paket kimliği `com.flixtoys.atis`, SKU `atis1`.
+- **App Store Connect'te uygulama kaydı yoksa:** Yükleme "app not found" der. App Store Connect > **Uygulamalar** > **+** > Yeni Uygulama ile ekle. Mevcut kayıt: App ID 6832637118, ad **Flix Atış** (tr) / **Flix Shot** (en), paket kimliği `com.flixtoys.atis`, SKU `FLIXSHOT001`.
