@@ -12,7 +12,7 @@ on:
       version:
         description: 'App Store sürümü (örn. 1.5.1)'
         required: true
-        default: '1.5.1'
+        default: '1.5.2'
       test_ads:
         description: 'Gerçek reklam yerine Google test reklamları (sadece deneme için)'
         type: boolean
@@ -131,8 +131,8 @@ jobs:
           APP_VERSION: ${{ inputs.version }}
         run: |
           set -euo pipefail
-          # unique, always increasing build number: date + time (UTC) + run attempt
-          BN="$(date -u +%y%m%d%H%M)${{ github.run_attempt }}"
+          # plain build numbers 1, 2, 3...: this workflow's run count minus the 8 runs made before version 1.5.2
+          BN=$(( ${{ github.run_number }} - 8 ))
           echo "BUILD_NUMBER=$BN" >> "$GITHUB_ENV"; export BUILD_NUMBER="$BN"
           npm ci
           npm run build
