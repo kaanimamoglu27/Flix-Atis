@@ -12,7 +12,7 @@ on:
       version:
         description: 'App Store sürümü (örn. 1.5.1)'
         required: true
-        default: '1.5.2'
+        default: '1.5.3'
       test_ads:
         description: 'Gerçek reklam yerine Google test reklamları (sadece deneme için)'
         type: boolean
@@ -138,6 +138,7 @@ jobs:
           npm run build
           [ -d ios ] || npx cap add ios --packagemanager CocoaPods
           npm run sync
+          python3 tools/ads_audit.py
           echo "Sürüm $APP_VERSION, build $BN, reklam modu $ADS_MODE"
 
       - name: App hedefini elle imzalamaya ayarla
