@@ -1,0 +1,981 @@
+getpwuid_r did not find a match for uid 501
+Filtering the log data using "process == "App""
+Timestamp               Ty Process[PID:TID]
+2026-11-15 22:11:53.403 Df App[8387:75bb] [com.apple.WebKit:RemoteLayerTree] RemoteLayerTreeDrawingAreaProxy(10) Unhiding layer tree
+2026-11-15 22:11:54.060 Db App[8387:7606] [com.apple.storekit:Default] Decoding service response to StorefrontInternal
+2026-11-15 22:11:54.095 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] Storefront updated to Optional(StoreKit.StorefrontInternal(id: "143441,29", countryCode: "USA", locale: en_US@currency=usd (fixed en_US@currency=usd)))
+2026-11-15 22:11:54.095 I  App[8387:7606] [com.apple.storekit:Default] AAFService Closing XPCConnection c1814838
+2026-11-15 22:11:54.095 Df App[8387:7606] [com.apple.xpc:connection] [0x101912860] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-11-15 22:11:54.099 Df App[8387:7606] [com.apple.storekit:Default] AAFService connection invalidated
+2026-11-15 22:11:54.128 A  App[8387:75bb] (StoreKit) StoreKit/DaemonNotification
+2026-11-15 22:11:54.128 Df App[8387:75bb] [com.apple.storekit:Default] Received 'storefrontchanged' daemon notification
+2026-11-15 22:11:54.128 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] Starting new storefront update task
+2026-11-15 22:11:54.129 I  App[8387:7606] [com.apple.storekit:Default] AAFService Starting new XPCConnection aa00713a
+2026-11-15 22:11:54.129 Df App[8387:7606] [com.apple.xpc:connection] [0x101848e70] activating connection: mach=true listener=false peer=false name=com.apple.storekitd
+2026-11-15 22:11:54.156 A  App[8387:75bb] (StoreKit) StoreKit/DaemonNotification
+2026-11-15 22:11:54.156 Df App[8387:75bb] [com.apple.storekit:Default] Received 'storefrontchanged' daemon notification
+2026-11-15 22:11:54.158 Db App[8387:7606] [com.apple.storekit:Default] Decoding service response to StorefrontInternal
+2026-11-15 22:11:54.160 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] No change in current storefront
+2026-11-15 22:11:54.162 I  App[8387:7606] [com.apple.storekit:Default] AAFService Closing XPCConnection aa00713a
+2026-11-15 22:11:54.162 Df App[8387:7606] [com.apple.xpc:connection] [0x101848e70] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-11-15 22:11:54.162 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] Starting new storefront update task
+2026-11-15 22:11:54.162 I  App[8387:7606] [com.apple.storekit:Default] AAFService Starting new XPCConnection 4d87cdc8
+2026-11-15 22:11:54.165 Df App[8387:7606] [com.apple.xpc:connection] [0x101916530] activating connection: mach=true listener=false peer=false name=com.apple.storekitd
+2026-11-15 22:11:54.178 Df App[8387:7607] [com.apple.storekit:Default] AAFService connection invalidated
+2026-11-15 22:11:54.184 Db App[8387:7606] [com.apple.storekit:Default] Decoding service response to StorefrontInternal
+2026-11-15 22:11:54.184 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] No change in current storefront
+2026-11-15 22:11:54.184 I  App[8387:7606] [com.apple.storekit:Default] AAFService Closing XPCConnection 4d87cdc8
+2026-11-15 22:11:54.184 Df App[8387:7606] [com.apple.xpc:connection] [0x101916530] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-11-15 22:11:54.184 Df App[8387:7606] [com.apple.storekit:Default] AAFService connection invalidated
+2026-11-15 22:11:54.220 A  App[8387:75bb] (StoreKit) StoreKit/DaemonNotification
+2026-11-15 22:11:54.220 Df App[8387:75bb] [com.apple.storekit:Default] Received 'storefrontchanged' daemon notification
+2026-11-15 22:11:54.220 Df App[8387:7606] [com.apple.storekit:Default] [e5dca9a7_SK1] Starting new storefront update task
+2026-11-15 22:11:54.220 I  App[8387:7606] [com.apple.storekit:Default] AAFService Starting new XPCConnection c7bc5930
+2026-11-15 22:11:54.221 Df App[8387:7606] [com.apple.xpc:connection] [0x10194e4c0] activating connection: mach=true listener=false peer=false name=com.apple.storekitd
+2026-11-15 22:11:54.226 Db App[8387:75e7] [com.apple.storekit:Default] Decoding service response to StorefrontInternal
+2026-11-15 22:11:54.226 Df App[8387:75e7] [com.apple.storekit:Default] [e5dca9a7_SK1] No change in current storefront
+2026-11-15 22:11:54.226 I  App[8387:75e7] [com.apple.storekit:Default] AAFService Closing XPCConnection c7bc5930
+2026-11-15 22:11:54.228 Df App[8387:75e7] [com.apple.xpc:connection] [0x10194e4c0] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-11-15 22:11:54.229 Df App[8387:7606] [com.apple.storekit:Default] AAFService connection invalidated
+2026-11-15 22:11:54.575 Db App[8387:7607] [com.apple.BaseBoard:MachPort]  *|machport|* <BSMachPortTaskNameRight: 0x600001726780; usable: YES; (8387:2107:send task_name_for_pid:InputUI.8408)> -> (<NSThread: 0x600001729f40>{number = 8, name = (null)}) (
+	0   BaseBoard                           0x0000000183f857e0 -[BSMachPortRight _initWithPort:type:owner:trace:] + 192
+	1   BaseBoard                           0x0000000183f87754 -[BSMachPortTaskNameRight initWithPID:] + 260
+	2   BaseBoard                           0x0000000183f875f4 +[BSMachPortTaskNameRight taskNameForPID:] + 56
+	3   BaseBoard                           0x0000000183f9a71c +[BSProcessHandle processHandleForXPCConnection:] + 176
+	4   BoardServices                       0x000000018806a73c +[BSXPCServiceConnectionPeer peerOfConnection:] + 312
+	5   BoardServices                       0x000000018809fcb4 __55-[BSXPCServiceConnection _lock_activateNowOrWhenReady:]_block_invoke_2 + 136
+	6   BoardServices                       0x00000001880962fc __55-[BSXPCServiceConnectionMessage _actuallySendWithMode:]_block_invoke + 144
+	7
+2026-11-15 22:11:54.618 Df App[8387:75ea] [com.apple.AppSSO:SOClient] configurationWithCompletion: success = YES, error = (null)
+2026-11-15 22:11:54.619 Db App[8387:75ea] [com.apple.AppSSO:SOConfigurationClient] got new configuration with 0 profile(s), error = (null)
+2026-11-15 22:11:54.619 Db App[8387:75ea] [com.apple.AppSSO:SOAuthorizationCore] +[SOAuthorizationCore canPerformAuthorizationWithURL:responseCode:callerBundleIdentifier:useInternalExtensions:completion:]_block_invoke_2 <mask.hash: '7h8NQpl1z2bSsx3NZW4yHA=='>, responseCode = 0, callerBundleIdentifier = (null), useInternalExtensions = YES, result = NO on SOAuthorizationCore
+2026-11-15 22:11:54.620 Df App[8387:75bb] [com.apple.WebKit:AppSSO] SOAuthorizationCoordinator::tryAuthorize: The requested URL is not registered for AppSSO handling. No further action needed.
+2026-11-15 22:11:55.005 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request storage access quirks from WebPrivacy.
+2026-11-15 22:11:55.005 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request storage access user agent string quirks from WebPrivacy.
+2026-11-15 22:11:55.006 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request known fingerprinting scripts from WebPrivacy: Error Domain=WebPrivacyErrorDomain Code=1001 "List data not found" UserInfo={NSLocalizedDescription=List data not found}
+2026-11-15 22:11:55.006 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request query parameters from WebPrivacy.
+2026-11-15 22:11:55.006 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::decidePolicyForNavigationAction: listener called: frameID=8589934593, isMainFrame=1, navigationID=26, policyAction=Use, isAppBoundDomain=0, wasNavigationIntercepted=0
+2026-11-15 22:11:55.006 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::receivedNavigationActionPolicyDecision: frameID=8589934593, isMainFrame=1, navigationID=26, policyAction=Use
+2026-11-15 22:11:55.009 Df App[8387:75bb] [com.apple.WebKit:ProcessSwapping] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::decidePolicyForNavigationAction: keep using process 8404 for navigation, reason=Process has not yet committed any provisional loads
+2026-11-15 22:11:55.009 Df App[8387:75bb] [com.apple.WebKit:Process] 0x1100dc0c0 - [PID=8404] WebProcessProxy::canTerminateAuxiliaryProcess: returns false (pageCount=1, provisionalPageCount=0, suspendedPageCount=0, m_isInProcessCache=0, m_shutdownPreventingScopeCounter=0)
+2026-11-15 22:11:55.009 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebFrameLoaderClient::dispatchDecidePolicyForNavigationAction: Got policyAction Use from async IPC
+2026-11-15 22:11:55.009 Df App[8387:76b5] [com.apple.WebKit:Loading] WebContent[8404] 0x10b07c700 - [pageID=8, frameID=8589934593] PolicyChecker::checkNavigationPolicy: continuing because this policyAction from dispatchDecidePolicyForNavigationAction is Use
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::stopAllLoaders: m_provisionalDocumentLoader=0, m_documentLoader=4497371136
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, isMainFrame=1] DocumentLoader::stopLoading
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::setProvisionalDocumentLoader: Setting provisional document loader to 4497375232 (was 0)
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::continueLoadAfterNavigationPolicy: Setting provisional document loader (m_provisionalDocumentLoader=4497375232)
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::freezeLayerTree: Adding a reason to freeze layer tree (reason=1, new=1, old=0)
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::setPolicyDocumentLoader: Setting policy document loader to 0 (was 4497375232)
+2026-11-15 22:11:55.010 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::prepareForLoadStart: Starting frame load
+2026-11-15 22:11:55.011 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: ProgressTracker::progressStarted: frameID 8589934593, value 0.100000, tracked frames 1, originating frameID 8589934593, isMainLoad 1
+2026-11-15 22:11:55.011 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, isMainFrame=1] DocumentLoader::startLoadingMainResource: Starting load
+2026-11-15 22:11:55.012 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::didStartProvisionalLoadForFrame: frameID=8589934593, isMainFrame=1
+2026-11-15 22:11:55.012 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x1100dc0c0 - [PID=8404] WebProcessProxy::didStartProvisionalLoadForMainFrame:
+2026-11-15 22:11:55.013 E  App[8387:76b5] [com.apple.WebKit:ResourceLoadStatistics] WebContent[8404] Unable to filter tracking query parameters (missing data)
+2026-11-15 22:11:55.017 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=18] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:11:55.017 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=18 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:11:55.017 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c001000, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:11:55.017 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=18] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:11:55.027 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=18] WebURLSchemeTaskProxy::didReceiveData: Received data during response processing, queuing it.
+2026-11-15 22:11:55.027 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=18] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:11:55.504 Db App[8387:7609] [com.apple.FrontBoard:Common] Creating service facility connection with <BSServiceConnectionEndpoint: 0x6000002a7720; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.system-service>
+2026-11-15 22:11:55.607 I  App[8387:75ea] [com.apple.Safari.SafeBrowsing:XPC] Receive GetSafeBrowsingEnabledState response from safe browsing service
+2026-11-15 22:11:55.607 I  App[8387:75ea] [com.apple.Safari.SafeBrowsing:Database] Send GetDatabases message to safe browsing service with protection type 1
+2026-11-15 22:11:55.608 I  App[8387:75ea] [com.apple.Safari.SafeBrowsing:Database] Already waiting for GetDatabases response with protection type 1
+2026-11-15 22:11:55.790 Df App[8387:760e] [com.apple.Safari.SafeBrowsing:Database] Service did finish database update with protection type 1 and provider 1
+2026-11-15 22:11:55.790 Df App[8387:760e] [com.apple.Safari.SafeBrowsing:Database] Service did finish database update with protection type 1 and provider 1
+2026-11-15 22:11:55.889 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:56.140 E  App[8387:75e3] [com.apple.TextInputUI:CandidateGeneration] Attempted to update accumulator from source type: 0, after completion has already been called for token:[28E82C16]. This is an error and will be ignored.
+2026-11-15 22:11:56.198 Df App[8387:7609] [com.apple.FrontBoard:Common] [FBSSystemService][0x24ad] Sending request to open "com.apple.iMessageAppsViewService"
+2026-11-15 22:11:56.445 Db App[8387:75e7] [com.apple.BaseBoard:Common] BSProcessHandle will auto-code: <BSObjCIvar: 0x600000c86070; "_auditToken" (<BSAuditToken *>)>, <BSObjCIvar: 0x600000c86040; "_name" (<NSString *>)>, <BSObjCIvar: 0x600000c859e0; "_taskNameRight" (<BSMachPortTaskNameRight *>)>, <BSObjCIvar: 0x600000c85ec0; "_pid" (<int>)>, <BSObjCIvar: 0x600000c85a10; "_bundleID" (<NSString *>)>
+2026-11-15 22:11:56.448 Db App[8387:75e7] [com.apple.BaseBoard:MachPort]  *|machport|* <BSMachPortTaskNameRight: 0x600001728b00; usable: YES; (8387:1507:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x60000170e100>{number = 3, name = (null)}) (
+	0   BaseBoard                           0x0000000183f857e0 -[BSMachPortRight _initWithPort:type:owner:trace:] + 192
+	1   BaseBoard                           0x0000000183f861cc -[BSMachPortRight initWithXPCDictionary:] + 164
+	2   BaseBoard                           0x0000000183f87a50 -[BSMachPortTaskNameRight initWithXPCDictionary:] + 56
+	3   BaseBoard                           0x0000000183fd6bac _BSXPCDecodeObjectFromContext + 2892
+	4   BaseBoard                           0x0000000183fd3244 _BSXPCDecodeObjectForKey + 212
+	5   BaseBoard                           0x0000000183fd4f64 _BSXPCDecodeIvarsForObject + 1112
+	6   BaseBoard                           0x0000000183f997b4 -[BSXPCAutoCoder initWithCoder:] + 304
+	7   BaseBoard                           0x0000000183fd6af8 _BSXPCDecodeObjectFromC
+2026-11-15 22:11:56.448 Df App[8387:75e7] [com.apple.FrontBoard:Common] [FBSSystemService][0x24ad] Request successful: <BSProcessHandle: 0x600000c7ea00; iMessageAppsVie:8524; valid: YES>
+2026-11-15 22:11:56.449 Db App[8387:75e7] [com.apple.BaseBoard:MachPort]  *|machport|* invalidate <BSMachPortTaskNameRight:0x600001728b00 usable=YES (8387:1507:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x60000170e100>{number = 3, name = (null)}) (
+	0   BaseBoard                           0x0000000183f85f28 -[BSMachPortRight _lock_invalidateForOwner:] + 288
+	1   BaseBoard                           0x0000000183f86008 -[BSMachPortRight invalidate] + 44
+	2   BaseBoard                           0x0000000183f9afc4 -[BSProcessHandle dealloc] + 28
+	3   libobjc.A.dylib                     0x000000018009b06c _ZN19AutoreleasePoolPage12releaseUntilEPP11objc_object + 212
+	4   libobjc.A.dylib                     0x000000018009af30 objc_autoreleasePoolPop + 256
+	5   BoardServices                       0x00000001880a1d7c BSXPCServiceConnectionExecuteCallOut + 240
+	6   BoardServices                       0x0000000188056f70 __71+[BSXPCServiceConnectionProxy createImplementationOfProtocol:forClass:]_block_invoke.102 + 148
+	7   BoardServices
+2026-11-15 22:11:56.654 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (STORAGE_ACCESS_PROMPT_QUIRKS)
+2026-11-15 22:11:56.657 Df App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] StorageAccessPromptQuirkController::didUpdateCachedListData: Loaded 1 storage access prompt(s) quirks from WebPrivacy.
+2026-11-15 22:11:56.830 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (QUERY_PARAM)
+2026-11-15 22:11:56.831 A  App[8387:75bb] (libsystem_containermanager.dylib) container_system_group_path_for_identifier
+2026-11-15 22:11:56.831 Df App[8387:75bb] [com.apple.containermanager:xpc] Requesting container lookup; class = 13, identifier = com.apple.nsurlsessiond, group_identifier = systemgroup.com.apple.nsurlstoragedresources, create = 1, temp = 0, euid = 501, uid = 501
+2026-11-15 22:11:56.831 A  App[8387:75bb] (libsystem_containermanager.dylib) container_query_t
+2026-11-15 22:11:56.832 Db App[8387:75bb] [com.apple.containermanager:xpc] Query; euid = 501, uid = 501, query = <dictionary: 0x6000026149c0> { count = 10, transaction: 0, voucher = 0x0, contents =
+	"ContainerClass" => <uint64: 0xb09b4b48528ed357>: 13
+	"Platform" => <uint64: 0xb09b4b48528ed307>: 7
+	"IdentifiersArray" => <array: 0x600000c882d0> { count = 1, capacity = 10, contents =
+		0: <string: 0x600000c882a0> { string cache = 0x0, length = 23, contents = "com.apple.nsurlsessiond" }
+	}
+	"Flags" => <uint64: 0xb09b4b00528ed327>: 38654705667
+	"Explicit" => <uint64: 0xb09b4b48528ed207>: 39
+	"PrivateFlags" => <uint64: 0xb09b4b48528ed327>: 3
+	"Transient" => <bool: 0x1e5760410>: false
+	"PersonaKernelID" => <uint64: 0xb09b4b48528ed33f>: 0
+	"Command" => <uint64: 0xb09b4b48528ed207>: 39
+	"GroupIdentifiers" => <array: 0x600000c88210> { count = 1, capacity = 10, contents =
+		0: <string: 0x600000c88300> { string cache = 0x0, length = 44, contents = "systemgroup.com.apple.nsurlstoragedresources" }
+	}
+}
+2026-11-15 22:11:56.832 Db App[8387:75bb] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> created; cnt = 2
+2026-11-15 22:11:56.832 Db App[8387:75bb] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> shared; cnt = 3
+2026-11-15 22:11:56.833 Db App[8387:75bb] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> released; cnt = 2
+2026-11-15 22:11:56.833 Db App[8387:75bb] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> will be canceled in 2 seconds; cnt = 2
+2026-11-15 22:11:56.833 Df App[8387:75bb] [com.apple.containermanager:unspecified] _container_query_get_result_at_index: success
+2026-11-15 22:11:56.833 Db App[8387:75bb] [com.apple.containermanager:sandbox] container_object_sandbox_extension_activate(container, true)
+2026-11-15 22:11:56.833 Db App[8387:75bb] [com.apple.containermanager:sandbox] container_object_sandbox_extension_activate(container, true): no sandbox token in container
+2026-11-15 22:11:56.833 A  App[8387:75bb] (libsystem_containermanager.dylib) container_copy_object
+2026-11-15 22:11:56.833 Df App[8387:75bb] [com.apple.containermanager:unspecified] container_system_group_path_for_identifier: success
+2026-11-15 22:11:56.837 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (STORAGE_ACCESS_USER_AGENT_STRING_QUIRKS)
+2026-11-15 22:11:56.857 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (FINGERPRINTING_SCRIPTS)
+2026-11-15 22:11:57.046 Df App[8387:7609] [com.apple.FrontBoard:Common] [FBSSystemService][0xf602] Sending request to open "com.apple.iMessageAppsViewService"
+2026-11-15 22:11:57.194 Db App[8387:7607] [com.apple.BaseBoard:MachPort]  *|machport|* <BSMachPortTaskNameRight: 0x600001775000; usable: YES; (8387:6707:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x600001729f40>{number = 8, name = (null)}) (
+	0   BaseBoard                           0x0000000183f857e0 -[BSMachPortRight _initWithPort:type:owner:trace:] + 192
+	1   BaseBoard                           0x0000000183f861cc -[BSMachPortRight initWithXPCDictionary:] + 164
+	2   BaseBoard                           0x0000000183f87a50 -[BSMachPortTaskNameRight initWithXPCDictionary:] + 56
+	3   BaseBoard                           0x0000000183fd6bac _BSXPCDecodeObjectFromContext + 2892
+	4   BaseBoard                           0x0000000183fd3244 _BSXPCDecodeObjectForKey + 212
+	5   BaseBoard                           0x0000000183fd4f64 _BSXPCDecodeIvarsForObject + 1112
+	6   BaseBoard                           0x0000000183f997b4 -[BSXPCAutoCoder initWithCoder:] + 304
+	7   BaseBoard                           0x0000000183fd6af8 _BSXPCDecodeObjectFromC
+2026-11-15 22:11:57.194 Df App[8387:7607] [com.apple.FrontBoard:Common] [FBSSystemService][0xf602] Request successful: <BSProcessHandle: 0x600000c3ff90; iMessageAppsVie:8524; valid: YES>
+2026-11-15 22:11:57.195 Db App[8387:7607] [com.apple.BaseBoard:MachPort]  *|machport|* invalidate <BSMachPortTaskNameRight:0x600001775000 usable=YES (8387:6707:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x600001729f40>{number = 8, name = (null)}) (
+	0   BaseBoard                           0x0000000183f85f28 -[BSMachPortRight _lock_invalidateForOwner:] + 288
+	1   BaseBoard                           0x0000000183f86008 -[BSMachPortRight invalidate] + 44
+	2   BaseBoard                           0x0000000183f9afc4 -[BSProcessHandle dealloc] + 28
+	3   libobjc.A.dylib                     0x000000018009b06c _ZN19AutoreleasePoolPage12releaseUntilEPP11objc_object + 212
+	4   libobjc.A.dylib                     0x000000018009af30 objc_autoreleasePoolPop + 256
+	5   BoardServices                       0x00000001880a1d7c BSXPCServiceConnectionExecuteCallOut + 240
+	6   BoardServices                       0x0000000188056f70 __71+[BSXPCServiceConnectionProxy createImplementationOfProtocol:forClass:]_block_invoke.102 + 148
+	7   BoardServices
+2026-11-15 22:11:57.208 Db App[8387:75e3] [com.apple.FrontBoard:Common] [FBSSystemAppProxy:0x60000293cbd0] Service facility connection invalidated
+2026-11-15 22:11:57.274 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c2b500> (Domain: com.apple.AdLib, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.274 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c34d80> (Domain: com.apple.AdLib, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.309 Db App[8387:7609] [com.apple.FrontBoard:Common] Creating service facility connection with <BSServiceConnectionEndpoint: 0x6000002ac060; target: com.apple.frontboard.systemappservices; service: com.apple.frontboard.system-service>
+2026-11-15 22:11:57.431 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c0c580> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.431 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c0b080> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.431 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsPlistSource<0x600002c0ef80> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.432 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsPlistSource<0x600002c11300> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) loaded: a new base plist and no additional changes from the base plist
+2026-11-15 22:11:57.432 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsPlistSource<0x600002c11680> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.433 Df App[8387:7609] [com.apple.FrontBoard:Common] [FBSSystemService][0x1639] Sending request to open "com.apple.iMessageAppsViewService"
+2026-11-15 22:11:57.434 Df App[8387:7609] [com.apple.xpc:connection] [0x10182b710] activating connection: mach=true listener=false peer=false name=com.apple.iMessageAppsViewService.warmup-connection
+2026-11-15 22:11:57.436 Db App[8387:75e7] [com.apple.BaseBoard:MachPort]  *|machport|* <BSMachPortTaskNameRight: 0x600001772c80; usable: YES; (8387:5427:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x60000170e100>{number = 3, name = (null)}) (
+	0   BaseBoard                           0x0000000183f857e0 -[BSMachPortRight _initWithPort:type:owner:trace:] + 192
+	1   BaseBoard                           0x0000000183f861cc -[BSMachPortRight initWithXPCDictionary:] + 164
+	2   BaseBoard                           0x0000000183f87a50 -[BSMachPortTaskNameRight initWithXPCDictionary:] + 56
+	3   BaseBoard                           0x0000000183fd6bac _BSXPCDecodeObjectFromContext + 2892
+	4   BaseBoard                           0x0000000183fd3244 _BSXPCDecodeObjectForKey + 212
+	5   BaseBoard                           0x0000000183fd4f64 _BSXPCDecodeIvarsForObject + 1112
+	6   BaseBoard                           0x0000000183f997b4 -[BSXPCAutoCoder initWithCoder:] + 304
+	7   BaseBoard                           0x0000000183fd6af8 _BSXPCDecodeObjectFromC
+2026-11-15 22:11:57.436 Df App[8387:75e7] [com.apple.FrontBoard:Common] [FBSSystemService][0x1639] Request successful: <BSProcessHandle: 0x600000c88e10; iMessageAppsVie:8524; valid: YES>
+2026-11-15 22:11:57.436 Db App[8387:75e7] [com.apple.BaseBoard:MachPort]  *|machport|* invalidate <BSMachPortTaskNameRight:0x600001772c80 usable=YES (8387:5427:send xpcCode) from (6382:3681b:send task_name_for_pid:iMessageAppsVie.8524)> -> (<NSThread: 0x60000170e100>{number = 3, name = (null)}) (
+	0   BaseBoard                           0x0000000183f85f28 -[BSMachPortRight _lock_invalidateForOwner:] + 288
+	1   BaseBoard                           0x0000000183f86008 -[BSMachPortRight invalidate] + 44
+	2   BaseBoard                           0x0000000183f9afc4 -[BSProcessHandle dealloc] + 28
+	3   libobjc.A.dylib                     0x000000018009b06c _ZN19AutoreleasePoolPage12releaseUntilEPP11objc_object + 212
+	4   libobjc.A.dylib                     0x000000018009af30 objc_autoreleasePoolPop + 256
+	5   BoardServices                       0x00000001880a1d7c BSXPCServiceConnectionExecuteCallOut + 240
+	6   BoardServices                       0x0000000188056f70 __71+[BSXPCServiceConnectionProxy createImplementationOfProtocol:forClass:]_block_invoke.102 + 148
+	7   BoardServices
+2026-11-15 22:11:57.563 Db App[8387:760e] [com.apple.FrontBoard:Common] [FBSSystemAppProxy:0x600002944070] Service facility connection invalidated
+2026-11-15 22:11:57.565 Df App[8387:7609] [com.apple.xpc:connection] [0x10184a300] activating connection: mach=true listener=false peer=false name=com.apple.iMessageAppsViewService.warmup-connection
+2026-11-15 22:11:57.591 Df App[8387:7609] [com.apple.xpc:connection] [0x101636490] activating connection: mach=true listener=false peer=false name=com.apple.iMessageAppsViewService.warmup-connection
+2026-11-15 22:11:57.611 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c30180> (Domain: com.apple.itunesstored, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.612 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c30100> (Domain: com.apple.itunesstored, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.698 I  App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] Receive GetDatabases response from safe browsing service with protection type: 1
+2026-11-15 22:11:57.698 I  App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] Receive GetDatabases response from safe browsing service
+2026-11-15 22:11:57.699 I  App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] Perform url lookup in the database
+2026-11-15 22:11:57.699 Db App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] Perform url lookup in the database: capacitor://localhost
+2026-11-15 22:11:57.699 I  App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] There are no matches in databases with given url
+2026-11-15 22:11:57.700 Db App[8387:75e7] [com.apple.Safari.SafeBrowsing:Database] There are no matches in databases with given url: capacitor://localhost
+2026-11-15 22:11:57.755 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c02c80> (Domain: com.apple.Accessibility, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.755 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c02d00> (Domain: com.apple.Accessibility, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.913 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c30b80> (Domain: com.apple.WebUI, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:57.922 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c30d00> (Domain: com.apple.WebUI, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.016 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c0f180> (Domain: com.apple.preferences.sounds, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.017 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c0f080> (Domain: com.apple.preferences.sounds, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.115 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c34900> (Domain: com.apple.mediaremote, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.115 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c35180> (Domain: com.apple.mediaremote, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.151 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c31100> (Domain: com.apple.avfaudio, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.151 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c30f80> (Domain: com.apple.avfaudio, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.286 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c2b600> (Domain: com.apple.SpeakSelection, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.287 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c2b680> (Domain: com.apple.SpeakSelection, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.467 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c23880> (Domain: com.apple.voiceservices, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.467 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c23800> (Domain: com.apple.voiceservices, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.845 Db App[8387:75ea] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c0c580> (Domain: com.apple.mediaaccessibility, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:11:58.855 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.voiceservices, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.855 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.avfaudio, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.856 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.voiceservices, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.856 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.mediaaccessibility, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.857 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.WebUI, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.857 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.avfaudio, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.UIKit, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.UIKit, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.AdLib, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.AdLib, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.mediaaccessibility, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.WebUI, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.858 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.UIKit, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.voiceservices, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.avfaudio, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.voiceservices, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.mediaaccessibility, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.WebUI, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.avfaudio, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.859 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.UIKit, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.860 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.itunesstored, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.860 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.AdLib, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.860 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.AdLib, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.860 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.mediaaccessibility, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.860 Db App[8387:75ea] [com.apple.defaults:User Defaults] Received remote change notification from process 0 for { domain: com.apple.WebUI, user: (null), byHost: 0, path: (null), cloud configuration path: (null) }
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0; 0x600000c88450> canceled after timeout; cnt = 3
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> released (shared; canceler); cnt = 2
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> released; cnt = 1
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0; 0x0> invalidated
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> released; cnt = 0
+2026-11-15 22:11:58.911 Db App[8387:75e3] [com.apple.containermanager:xpc] connection <0x600000c88450/1/0> freed; cnt = 0
+2026-11-15 22:12:04.046 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::setDocumentLoader: Setting document loader to 4497375232 (was 4497371136)
+2026-11-15 22:12:04.047 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, isMainFrame=1] DocumentLoader::detachFromFrame
+2026-11-15 22:12:04.047 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, isMainFrame=1] DocumentLoader::stopLoading
+2026-11-15 22:12:04.047 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::transitionToCommitted: Clearing provisional document loader (m_provisionalDocumentLoader=4497375232)
+2026-11-15 22:12:04.047 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::setProvisionalDocumentLoader: Setting provisional document loader to 0 (was 4497375232)
+2026-11-15 22:12:04.059 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key NSUndoManagerDefaultLevelsOfUndo in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.061 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::didNavigateWithNavigationDataShared:
+2026-11-15 22:12:04.066 E  App[8387:76b5] [com.apple.WebKit:ResourceLoadStatistics] WebContent[8404] Unable to hide query parameters from script (missing data)
+2026-11-15 22:12:04.066 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::unfreezeLayerTree: Removing a reason to freeze layer tree (reason=128, new=1, old=1)
+2026-11-15 22:12:04.068 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::unfreezeLayerTree: Removing a reason to freeze layer tree (reason=128, new=1, old=1)
+2026-11-15 22:12:04.072 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::unfreezeLayerTree: Removing a reason to freeze layer tree (reason=32, new=1, old=1)
+2026-11-15 22:12:04.076 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::didCommitLoadForFrame: frameID=8589934593, isMainFrame=1
+2026-11-15 22:12:04.084 Df App[8387:75bb] [com.apple.UIKit:KeyboardSceneDelegate] Reloading input views for key-window scene responder: <WKContentView: 0x10383ee00; frame = (0 0; 980 2128); opaque = NO; > force:N
+2026-11-15 22:12:04.084 I  App[8387:75bb] [com.apple.UIKit:Assertions] Started tracking new assertion of type: 42
+2026-11-15 22:12:04.084 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] currently observing: YES
+2026-11-15 22:12:04.087 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] connected: (
+    "<BKSHIDKeyboardDevice: 0x6000002b1060> {\134n    senderID: 0xACEFADE00000003;\134n    transport: <nil>;\134n    language: <nil>;\134n    layout: US;\134n    countryCode: 0;\134n    standardType: 4294967295;\134n    subinterfaceID: 0;\134n    capsLockKeyHasLanguageSwitchLabel: NO;\134n    globeKeyLabelHasGlobeSymbol: NO;\134n}"
+)
+2026-11-15 22:12:04.087 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] currently observing: NO
+2026-11-15 22:12:04.088 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] disconnected: (
+    "<BKSHIDKeyboardDevice: 0x6000002b1060> {\134n    senderID: 0xACEFADE00000003;\134n    transport: <nil>;\134n    language: <nil>;\134n    layout: US;\134n    countryCode: 0;\134n    standardType: 4294967295;\134n    subinterfaceID: 0;\134n    capsLockKeyHasLanguageSwitchLabel: NO;\134n    globeKeyLabelHasGlobeSymbol: NO;\134n}"
+)
+2026-11-15 22:12:04.088 Df App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_teardownExistingDelegate:<WKContentView: 0x10383ee00> forSetDelegate:(nil) force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.089 I  App[8387:75bb] [com.apple.siri:Client] -[AFDictationConnection dealloc] 0x600003b195e0
+2026-11-15 22:12:04.090 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.091 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "BSNSXPCTransport[C:3-1]" ID:(null) target:<<OS_xpc_endpoint: <endpoint>>>>
+2026-11-15 22:12:04.095 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-865 to dictionary
+2026-11-15 22:12:04.095 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationCommandTipsEnabled in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.095 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient endRemoteTextInputSessionWithID:options:completion:]  Ending text input session. sessionID = D3F3A143-F053-4C87-A8C9-B2DCF755B638, options = <RTISessionOptions: 0x6000002ac620; shouldResign = YES; animated = YES; offscreenDirection = 0; enhancedWindowingModeEnabled = NO
+2026-11-15 22:12:04.095 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _endSessionWithID:forServices:options:completion:]  End input session: D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:04.096 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "BSNSXPCTransport[C:3-1]" ID:(null) target:<<OS_xpc_endpoint: <endpoint>>>>
+2026-11-15 22:12:04.099 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-866 to dictionary
+2026-11-15 22:12:04.099 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient endAllowingRemoteTextInput:completion:]  End allowing remote text input: D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:04.100 Db App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Re-evaluating if text editing is allowed; reason: 'Allower removed: D3F3A143-F053-4C87-A8C9-B2DCF755B638'; notify: 0; allowed before: 1, allowed after: 0.
+2026-11-15 22:12:04.100 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Text editing allowed did change (editingAllowedAfter = NO)
+2026-11-15 22:12:04.100 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.100 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.102 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_setDelegate:(nil) existingDelegate:<WKContentView: 0x10383ee00> force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.103 Df App[8387:75bb] [com.apple.UIKit:SmartReply] Handling responseContextDidChange - existing: (null), new: (null)
+2026-11-15 22:12:04.103 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_setupDelegate:(nil) delegateSame:NO hardwareKeyboardStateChanged:NO endingInputSessionIdentifier:D3F3A143-F053-4C87-A8C9-B2DCF755B638 force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.103 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.104 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocapitalization in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardAutocapitalization in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardCheckSpelling in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardPrediction in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardInlineCompletion in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.105 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key SmartQuotesEnabled in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.107 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.107 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.107 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.107 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.108 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.108 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.108 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.108 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.108 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.109 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.109 Db App[8387:75ea] [com.apple.defaults:User Defaults] found no value for key KeyboardMathExpressionCompletion in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.109 Db App[8387:75bb] [com.apple.UIKit:UIKeyboardExtended] Requesting scene for autofill UI: request is pending -- not yet the current keyboard
+2026-11-15 22:12:04.109 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.109 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetBoolean TIStatistic Aggd: com.apple.keyboard.keyboardUI.lowercaseKeyplaneEnabled=yes
+2026-11-15 22:12:04.109 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetValue TIStatistic Aggd: com.apple.keyboard.keyboardUI.lowercaseKeyplaneEnabled=1
+2026-11-15 22:12:04.110 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] done with -setDelegate:force:delayEndInputSession:
+2026-11-15 22:12:04.110 Df App[8387:75bb] [com.apple.UIKit:KeyboardSceneDelegate] _reloadInputViewsForKeyWindowSceneResponder: 1 force: 0, fromBecomeFirstResponder: 0 (automaticKeyboard: 1, reloadIdentifier: B5122EB5-D5F4-4F4B-9B9B-B742F5876D80)
+2026-11-15 22:12:04.110 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.110 Df App[8387:75bb] [com.apple.UIKit:KeyboardSceneDelegate] _inputViewsForResponder: <WKContentView: 0x10383ee00; frame = (0 0; 980 2128); opaque = NO; >, automaticKeyboard: 1, force: 0
+2026-11-15 22:12:04.110 Df App[8387:75bb] [com.apple.UIKit:KeyboardSceneDelegate] _inputViewsForResponder, disableAutomaticKeyboardUI return empty
+2026-11-15 22:12:04.111 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.112 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] currently observing: YES
+2026-11-15 22:12:04.112 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] connected: (
+    "<BKSHIDKeyboardDevice: 0x6000002b10c0> {\134n    senderID: 0xACEFADE00000003;\134n    transport: <nil>;\134n    language: <nil>;\134n    layout: US;\134n    countryCode: 0;\134n    standardType: 4294967295;\134n    subinterfaceID: 0;\134n    capsLockKeyHasLanguageSwitchLabel: NO;\134n    globeKeyLabelHasGlobeSymbol: NO;\134n}"
+)
+2026-11-15 22:12:04.113 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] currently observing: NO
+2026-11-15 22:12:04.113 Df App[8387:75bb] [com.apple.BackBoard:Keyboard] disconnected: (
+    "<BKSHIDKeyboardDevice: 0x6000002b10c0> {\134n    senderID: 0xACEFADE00000003;\134n    transport: <nil>;\134n    language: <nil>;\134n    layout: US;\134n    countryCode: 0;\134n    standardType: 4294967295;\134n    subinterfaceID: 0;\134n    capsLockKeyHasLanguageSwitchLabel: NO;\134n    globeKeyLabelHasGlobeSymbol: NO;\134n}"
+)
+2026-11-15 22:12:04.113 Df App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_teardownExistingDelegate:(nil) forSetDelegate:<WKContentView: 0x10383ee00> force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.114 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.114 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value {
+    "en_US" = 1;
+} for key DictationLanguagesEnabled in CFPrefsPlistSource<0x600002c0fa80> (Domain: com.apple.keyboard.preferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.115 I  App[8387:75bb] [com.apple.siri:Client] -[AFDictationConnection initWithInstanceContext:] 0x600003b195e0 (Caller = <AFCallSiteInfo: 0x6000002ac8c0> {imagePath = /Library/Developer/CoreSimulator/Volumes/iOS_23C54/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices, symbolName = -[AFDictationConnection init]})
+2026-11-15 22:12:04.115 Db App[8387:75bb] [com.apple.siri:Client] -[AFDictationConnection dictationIsAvailableForLanguage:synchronous:] 0x600003b195e0 Checking if language en-US is available
+2026-11-15 22:12:04.115 Db App[8387:75bb] [com.apple.siri:Client] -[AFDictationConnection dictationIsAvailableForLanguage:synchronous:] 0x600003b195e0 Language en-US is available over network
+2026-11-15 22:12:04.116 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardDictationShortcut in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.116 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.116 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_setDelegate:<WKContentView: 0x10383ee00> existingDelegate:(nil) force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.118 Db App[8387:75bb] [com.apple.UIKit:UIKeyboardImpl] Delegate: <WKContentView: 0x10383ee00; frame = (0 0; 980 2128); anchorPoint = (0, 0); opaque = NO; gestureRecognizers = <NSArray: 0x600000c7fe40>; backgroundColor = UIExtendedSRGBColorSpace 0.0196078 0.0156863 0.0470588 1; layer = <CALayer: 0x600000c2ced0>>, conforms to BETextInput
+2026-11-15 22:12:04.118 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.118 Df App[8387:75bb] [com.apple.UIKit:SmartReply] Handling responseContextDidChange - existing: (null), new: (null)
+2026-11-15 22:12:04.118 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] -_setupDelegate:<WKContentView: 0x10383ee00> delegateSame:NO hardwareKeyboardStateChanged:NO endingInputSessionIdentifier:(null) force:NO delayEndInputSession:NO
+2026-11-15 22:12:04.118 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.119 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.119 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.119 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocapitalization in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.119 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.120 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.120 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.120 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.120 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardLanguageIndicatorEnabled in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.121 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.122 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardBias in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.123 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.124 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key GesturesEnabled in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.125 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardAllowPaddle in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.125 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetBoolean TIStatistic Aggd: com.apple.keyboard.keyboardUI.keyPaddleEnabled=yes
+2026-11-15 22:12:04.125 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetValue TIStatistic Aggd: com.apple.keyboard.keyboardUI.keyPaddleEnabled=1
+2026-11-15 22:12:04.125 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.126 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key EnhancedBackgroundContrastEnabled in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = EnhancedBackgroundContrastEnabled, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DarkenSystemColors in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = DarkenSystemColors, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key EnhancedTextLegibilityEnabled in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.127 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = EnhancedTextLegibilityEnabled, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key EnhancedBackgroundContrastEnabled in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = EnhancedBackgroundContrastEnabled, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DarkenSystemColors in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = DarkenSystemColors, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key EnhancedTextLegibilityEnabled in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.128 Db App[8387:75bb] [com.apple.Accessibility:AXSupportCommon] CF Read: domain = com.flixtoys.atis, preference = EnhancedTextLegibilityEnabled, appID = com.flixtoys.atis result = (null) (-1 - empty, 0 - false, 1 - true)
+2026-11-15 22:12:04.130 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key KeyboardBias in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.130 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.130 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.131 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.131 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.131 Db App[8387:75bb] [com.apple.TextInputUI:DynamicKeyplaneView] <TUIKeyplaneView: 0x10162e580> Requested tree update when layout is not yet ready
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.132 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.134 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.134 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.134 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.134 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.134 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.135 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.136 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.137 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.138 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.139 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.140 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.140 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.140 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.140 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardCapsLockRomanSwitch in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.141 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.UIKit:UIKeyboardExtended] Requesting scene for autofill UI: request is pending -- not yet the current keyboard
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.142 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient beginAllowingRemoteTextInput:]  Begin allowing remote text input: D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Re-evaluating if text editing is allowed; reason: 'Allower added: D3F3A143-F053-4C87-A8C9-B2DCF755B638'; notify: 0; allowed before: 0, allowed after: 1.
+2026-11-15 22:12:04.142 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Text editing allowed did change (editingAllowedAfter = YES)
+2026-11-15 22:12:04.142 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.143 Db App[8387:75bb] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c29b00> (Domain: com.apple.EmojiPreferences, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:12:04.143 Db App[8387:75bb] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c29b80> (Domain: com.apple.EmojiPreferences, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:12:04.144 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value {
+} for key EMFDefaultsKey in CFPrefsPlistSource<0x600002c29a80> (Domain: com.apple.EmojiPreferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c29a00> (Domain: com.apple.EmojiPreferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.144 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.145 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarIncrement TIStatistic Aggd: com.apple.keyboard.appAutofill.forTV.autofillDetected
+2026-11-15 22:12:04.145 Db App[8387:75bb] [com.apple.TextInput:IXADefault] routeCounterChangeThroughCoreAnalytics TIStatistic Adhoc: appAutofill.forTV.autofillDetected=1
+2026-11-15 22:12:04.146 Db App[8387:75bb] [com.apple.TextInput:IXADefault] -[TIAdhocEventDispatcher dispatchEventForStatisticWithName:andValue:withCompletionHandler:] Adhoc event not registered for statistic: appAutofill.forTV.autofillDetected
+2026-11-15 22:12:04.147 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.147 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.148 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.149 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.149 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.149 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.149 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.149 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.150 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.150 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.150 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.150 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.150 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetBoolean TIStatistic Aggd: com.apple.keyboard.keyboardUI.lowercaseKeyplaneEnabled=yes
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.TextInput:IXADefault] TIStatisticScalarSetValue TIStatistic Aggd: com.apple.keyboard.keyboardUI.lowercaseKeyplaneEnabled=1
+2026-11-15 22:12:04.151 Db App[8387:75bb] [com.apple.UIKit:InputSessionChange] done with -setDelegate:force:delayEndInputSession:
+2026-11-15 22:12:04.151 I  App[8387:75bb] [com.apple.UIKit:Assertions] Decrementing assertion of type 42. New active count: 0
+2026-11-15 22:12:04.151 I  App[8387:75bb] [com.apple.UIKit:Assertions] Releasing assertion of type 42
+2026-11-15 22:12:04.152 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.152 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.152 Df App[8387:75bb] [com.apple.UIKit:UIPeripheralHost] endPlacementForInputViewSet: <<UIInputViewSet: 0x600003700c00>; (empty)> windowScene: <UIWindowScene: 0x101809640; role: UIWindowSceneSessionRoleApplication; persistentIdentifier: 670D611F-C7CB-4715-8AAC-F3A4416D5DB6; activationState: UISceneActivationStateForegroundActive>
+2026-11-15 22:12:04.152 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.152 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.152 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.153 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.153 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.154 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.155 Df App[8387:75bb] [com.apple.UIKit:KeyboardArbiterClientLog] -[_UIRemoteKeyboards prepareToMoveKeyboard:withIAV:isIAVRelevant:showing:notifyRemote:forScene:] position: {{0, 0}, {0, 0}} visible: 0; notifyRemote: 1; isMinimized: NO
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.155 Df App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] Show keyboard with visual mode windowed (0)
+2026-11-15 22:12:04.155 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.156 Df App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient remoteTextInputSessionWithID:textSuggestionsChanged:]  Text input session suggestions changed. sessionID = D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:04.156 E  App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient remoteTextInputSessionWithID:textSuggestionsChanged:]  Can only set suggestions for an active session. sessionID = D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.162 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.163 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.164 Db App[8387:75bb] [com.apple.UIKit:InlineTextCompletion] Selection changed
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.165 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.TextInputUI:SmartReply] -[TUIKeyboardBackendController shouldQueryCandidateMultiplexerForKeyboardState:] => YES (hasCandidateMux=YES, hasActivePaths=NO, waitingForCPCandidates=NO)
+2026-11-15 22:12:04.166 Db App[8387:75bb] [com.apple.TextInputUI:BackendController] Generate candidates for keyboard state using [AUTOCORRECTIONS] flow.
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.166 Db App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] multiplexer:generateCandidatesForKeyboardState (tokenID=B032D0B0, candSel=N, delayed=N)
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key DictationLanguagesLastUsed in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.167 Db App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Added prediction generator result:[B032D0B0] for source type: 1, hasCandidates: NO ##
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.167 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] All generators are not complete.
+2026-11-15 22:12:04.167 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.168 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request allowed query parameters from WebPrivacy.
+2026-11-15 22:12:04.167 Db App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Added prediction generator result:[B032D0B0] for source type: 0, hasCandidates: YES ##
+2026-11-15 22:12:04.168 Df App[8387:75bb] [com.apple.WebKit:Fullscreen] PlaybackSessionManagerProxy::requestHideAndExitFullscreen(2906663760)
+2026-11-15 22:12:04.168 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] All generators are not complete.
+2026-11-15 22:12:04.169 Df App[8387:75bb] [com.apple.WebKit:Process] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::makeViewBlankIfUnpaintedSinceLastLoadCommit: Making the view blank because of a JS prompt before the first paint for its page
+2026-11-15 22:12:04.173 Db App[8387:75ea] [com.apple.TextInputUI:CandidateGeneration] Added prediction generator result:[B032D0B0] for source type: 0, hasCandidates: YES ##
+2026-11-15 22:12:04.173 Df App[8387:75ea] [com.apple.TextInputUI:CandidateGeneration] All generators are complete, dispatching to `completionBlockJustOnce`
+2026-11-15 22:12:04.173 Db App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Result accumulator completion block called for token:[B032D0B0], and didTimeout: NO, 2 of 2 returned results, generator sources: (
+    0,
+    1
+)
+2026-11-15 22:12:04.173 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Assigning candidates of source type kbd to `containerToPush, for autocorrection flow only` - B032D0B0
+2026-11-15 22:12:04.174 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Preparing to push <_TUIKeyboardCandidateContainer: 0x6000002a87c0> to candidate receiver, for request token: B032D0B0
+2026-11-15 22:12:04.174 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] Performing delayed generation for token=B032D0B0
+2026-11-15 22:12:04.174 Db App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] multiplexer:generateCandidatesForKeyboardState (tokenID=B032D0B0, candSel=N, delayed=Y)
+2026-11-15 22:12:04.174 Df App[8387:75e7] [com.apple.TextInputUI:CandidateGeneration] containerToPush has an autocorrection list.  pushing to candidate receiver with request token. B032D0B0.
+2026-11-15 22:12:04.176 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.177 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.177 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.177 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.177 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.177 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.178 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.179 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.179 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.180 Db App[8387:75bb] [com.apple.UIKit:KeyboardVisualMode] useVisualModeWindowed: 0 (windowingModeEnabled: 0)
+2026-11-15 22:12:04.180 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key WebKitDebugDragLiftDelay in CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.180 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key HWKeyboardAutocorrection in CFPrefsSearchListSource<0x600002c0f100> (Domain: com.apple.keyboard.preferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.181 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.182 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value {
+} for key EMFDefaultsKey in CFPrefsPlistSource<0x600002c29a80> (Domain: com.apple.EmojiPreferences, User: kCFPreferencesCurrentUser, ByHost: No, Container: (null), Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c29a00> (Domain: com.apple.EmojiPreferences, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.182 Db App[8387:75bb] [com.apple.defaults:User Defaults] looked up value (
+    "en-US"
+) for key AppleLanguages in CFPrefsPlistSource<0x600002c00480> (Domain: kCFPreferencesAnyApplication, User: kCFPreferencesCurrentUser, ByHost: No, Container: /Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data, Contents Need Refresh: No) via CFPrefsSearchListSource<0x600002c08580> (Domain: com.flixtoys.atis, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:04.182 Df App[8387:75bb] [com.apple.WebKit:Fullscreen] PlaybackSessionManagerProxy::requestHideAndExitFullscreen(2906663760)
+2026-11-15 22:12:04.182 Df App[8387:75bb] [com.apple.WebKit:Process] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::makeViewBlankIfUnpaintedSinceLastLoadCommit: Making the view blank because of a JS prompt before the first paint for its page
+2026-11-15 22:12:04.420 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::freezeLayerTree: Adding a reason to freeze layer tree (reason=128, new=129, old=1)
+2026-11-15 22:12:04.426 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=27] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.426 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=27 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.426 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c00e000, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.426 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=27] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.438 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=30] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.438 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=30 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.438 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::scheduleLoad: URL will be loaded as data
+2026-11-15 22:12:04.438 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=0, frameID=0, resourceID=0] WebResourceLoader::WebResourceLoader
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=31] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=31 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c011800, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=31] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=32] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=32 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c012000, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=32] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.454 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=33] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=33 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c012800, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=33] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=34] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=34 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c013000, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=34] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=18] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.455 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=18 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.472 E  App[8387:76b5] [com.apple.imageio:com.apple.WebKit.WebContent] WebContent[8404] makeImagePlus:3798: *** ERROR: 'WEBP'-_reader->initImage[0] failed err=-50
+2026-11-15 22:12:04.472 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=30 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.668 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=27] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.668 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=27 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.668 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::unfreezeLayerTree: Removing a reason to freeze layer tree (reason=128, new=1, old=129)
+2026-11-15 22:12:04.669 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=31] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.669 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=31 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.669 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=32] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.669 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=32 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.669 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=33] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.670 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=33 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.670 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=34] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.670 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=34 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.671 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _beginSessionWithID:forServices:force:]  Begin text input session. sessionID = D3F3A143-F053-4C87-A8C9-B2DCF755B638, options = <RTISessionOptions: 0x6000002a99e0; shouldResign = NO; animated = YES; offscreenDirection = 0; enhancedWindowingModeEnabled = NO
+2026-11-15 22:12:04.672 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "BSNSXPCTransport[C:3-1]" ID:(null) target:<<OS_xpc_endpoint: <endpoint>>>>
+2026-11-15 22:12:04.675 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-868 to dictionary
+2026-11-15 22:12:04.754 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=41] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.754 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=41 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.754 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::scheduleLoad: URL will be loaded as data
+2026-11-15 22:12:04.754 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=0, frameID=0, resourceID=0] WebResourceLoader::WebResourceLoader
+2026-11-15 22:12:04.754 E  App[8387:76b5] [com.apple.imageio:com.apple.WebKit.WebContent] WebContent[8404] makeImagePlus:3798: *** ERROR: 'WEBP'-_reader->initImage[0] failed err=-50
+2026-11-15 22:12:04.754 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=41 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.801 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=43] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.801 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=43 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.801 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c015800, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.801 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=43] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.835 Df App[8387:76b5] [com.apple.WebKit:ProcessSuspension] WebContent[8404]: [webPageID=8] WebPage::unfreezeLayerTree: Removing a reason to freeze layer tree (reason=1, new=0, old=1)
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [pageID=8, frameID=8589934593, isMainFrame=1] LocalFrameView::fireLayoutRelatedMilestonesIfNeeded: Firing first visually non-empty layout milestone on the main frame
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebLocalFrameLoaderClient::dispatchDidReachLayoutMilestone: dispatching DidFirstLayoutForFrame
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebLocalFrameLoaderClient::dispatchDidReachLayoutMilestone: dispatching DidReachLayoutMilestone (milestones=DidFirstLayout, DidFirstVisuallyNonEmptyLayout)
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebLocalFrameLoaderClient::dispatchDidReachLayoutMilestone: dispatching DidFirstVisuallyNonEmptyLayoutForFrame
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebLocalFrameLoaderClient::completePageTransitionIfNeeded: dispatching didCompletePageTransition
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=43] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.836 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=43 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.842 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=46] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.842 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=46 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.842 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c016800, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.842 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=46] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=48] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=48 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::scheduleLoad: URL will be loaded as data
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [webPageID=0, frameID=0, resourceID=0] WebResourceLoader::WebResourceLoader
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=49] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=49 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c007800, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:04.858 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=49] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:04.868 Df App[8387:76b5] [com.apple.WebKit:Layout] WebContent[8404]: [webFrameID=8589934593, webPageID=8] WebLocalFrameLoaderClient::dispatchDidReachLayoutMilestone: dispatching DidReachLayoutMilestone (milestones=DidFirstMeaningfulPaint)
+2026-11-15 22:12:04.875 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=46] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:04.875 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=46 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.877 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=48 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:04.969 Df App[8387:75bb] (AppTrackingTransparency) [ATTrackingManager] trackingAuthorizationStatus API call invoked.
+2026-11-15 22:12:04.970 Df App[8387:75bb] (AppTrackingTransparency) [ATTrackingManager] Performing TCC Access Preflight Request.
+2026-11-15 22:12:04.970 Db App[8387:75bb] [com.apple.TCC:cache] GET: (kTCCServiceUserTracking, <Credential (0x60000293cfc0) | Requestor>) -> (null)
+2026-11-15 22:12:04.970 A  App[8387:75bb] (TCC) tcc_send_request_authorization() IPC
+2026-11-15 22:12:04.970 Df App[8387:75bb] [com.apple.xpc:connection] [0x10183bd50] activating connection: mach=true listener=false peer=false name=com.apple.tccd
+2026-11-15 22:12:04.971 I  App[8387:75bb] [com.apple.TCC:access] SEND: 0/7 synchronous to com.apple.tccd: request: msgID=8387.3, function=TCCAccessRequest, service=kTCCServiceUserTracking,
+2026-11-15 22:12:04.990 I  App[8387:75bb] [com.apple.TCC:access] RECV: synchronous reply <dictionary: 0x600003e14f00> { count = 5, transaction: 0, voucher = 0x0, contents =
+	"prompt_type" => <uint64: 0xb09b4b48528ed337>: 1
+	"auth_value" => <uint64: 0xb09b4b48528ed337>: 1
+	"preflight_unknown" => <bool: 0x1e57603f0>: true
+	"auth_version" => <uint64: 0xb09b4b48528ed337>: 1
+	"auth_reason" => <uint64: 0xb09b4b48528ed33f>: 0
+}
+2026-11-15 22:12:04.990 I  App[8387:75bb] [com.apple.TCC:cache] SET: (kTCCServiceUserTracking, <Credential (0x60000293cfc0) | Requestor>) -> <Authorization Record (0x60000350cb00) | Service: kTCCServiceUserTracking, AuthRight: Unknown, Reason: None, Version: 1, >
+2026-11-15 22:12:04.990 Df App[8387:75bb] [com.apple.xpc:connection] [0x10183bd50] invalidated after the last release of the connection object
+2026-11-15 22:12:04.990 Db App[8387:75bb] [com.apple.TCC:access] disposing: 0x60000330dfe0(OS_tcc_message_options)
+2026-11-15 22:12:04.991 Df App[8387:75bb] (AppTrackingTransparency) [ATTrackingManager] Returning from trackingAuthorizationStatus - 0
+2026-11-15 22:12:04.993 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:04.993 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4180 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:05.521 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (ALLOWED_QUERY_PARAM)
+2026-11-15 22:12:05.705 Df App[8387:75bb] [com.apple.WebKit:Process] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::stopMakingViewBlankDueToLackOfRenderingUpdateIfNecessary:
+2026-11-15 22:12:08.642 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=49] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:08.643 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=49 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:08.644 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:08.646 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:08.646 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:08.646 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:08.676 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:08.677 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4180 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:08.702 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=168] ResourceLoader::willSendRequestInternal: calling completion handler
+2026-11-15 22:12:08.702 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=168 SubResourceLoader::willSendRequestInternal: resource load finished; calling completion handler
+2026-11-15 22:12:08.703 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] 0x10b0680e0 - [resourceLoader=0x10c942000, frameLoader=0x10b1d8100, frame=0x10b02b0c0, webPageID=8, frameID=8, resourceID=8] WebLoaderStrategy::tryLoadingUsingURLSchemeHandler: URL will be handled by a UIProcess URL scheme handler
+2026-11-15 22:12:08.703 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=168] WebURLSchemeTaskProxy::startLoading
+2026-11-15 22:12:11.374 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404] [schemeHandler=3, webPageID=8, frameID=8589934593, taskID=168] WebURLSchemeTaskProxy::didComplete
+2026-11-15 22:12:11.374 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8, frameID=8589934593, resourceID=168 SubResourceLoader::didFinishLoading
+2026-11-15 22:12:11.401 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::didFinishDocumentLoadForFrame: frameID=8589934593, isMainFrame=1
+2026-11-15 22:12:11.402 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::setState: main frame load completed
+2026-11-15 22:12:11.402 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]: Memory usage info dump at MainFrameLoadCompleted:
+2026-11-15 22:12:11.403 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   page_count: 1
+2026-11-15 22:12:11.403 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   backforward_cache_page_count: 0
+2026-11-15 22:12:11.403 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   document_count: 1
+2026-11-15 22:12:11.403 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   javascript_gc_heap_capacity_mb: 37
+2026-11-15 22:12:11.403 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   javascript_gc_heap_extra_memory_size_mb: 26
+2026-11-15 22:12:11.404 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   internal_mb: 59
+2026-11-15 22:12:11.404 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   compressed_mb: 6
+2026-11-15 22:12:11.404 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   phys_footprint_mb: 68
+2026-11-15 22:12:11.404 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   resident_size_mb: 203
+2026-11-15 22:12:11.405 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]:   virtual_size_mb: 419312
+2026-11-15 22:12:11.405 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: ProgressTracker::progressCompleted: frameID 8589934593, value 0.798060, tracked frames 1, originating frameID 8589934593, isMainLoad 1
+2026-11-15 22:12:11.405 Df App[8387:76b5] [com.apple.WebKit:Network] WebContent[8404]: ProgressTracker::finalProgressComplete: value 0.798060, tracked frames 0, originating frameID 8589934593, isMainLoad 1, isMainLoadProgressing 0
+2026-11-15 22:12:11.405 Df App[8387:76b5] [com.apple.WebKit:ResourceLoading] WebContent[8404]: [pageID=8 frameID=8589934593 isMainFrame=1] FrameLoader::checkLoadCompleteForThisFrame: Finished frame load
+2026-11-15 22:12:11.411 Df App[8387:75bb] [com.apple.WebKit:Loading] 0x10302c218 - [pageProxyID=7, webPageID=8, PID=8404] WebPageProxy::didFinishLoadForFrame: frameID=8589934593, isMainFrame=1
+2026-11-15 22:12:11.411 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x110124100 - NavigationState will release its process network assertion soon because the page load completed
+2026-11-15 22:12:11.424 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b42a0 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'Client navigation'
+2026-11-15 22:12:11.491 I  App[8387:75bb] [com.apple.launchservices:datasep] application record search init. Node: <FSNode 0x6000002b20a0> { isDir = y, path = '/Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data/Containers/Bundle/Application/3948E73A-DAE0-49EC-9FEE-7871FBEF3BF8/App.app' } bundleID: (null) itemID: 0
+2026-11-15 22:12:11.492 Db App[8387:75bb] [com.apple.launchservices:binding] BindingEvaluator::CreateWithBundleInfo(ID=(null), name=App.app, CC=????, vers=(null))
+2026-11-15 22:12:11.492 Db App[8387:75bb] [com.apple.launchservices:binding] Skipping strong binding binding due to options
+2026-11-15 22:12:11.492 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.492 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.493 Db App[8387:75bb] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c15e80> (Domain: com.apple.demo-settings, User: kCFPreferencesCurrentUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:12:11.493 Db App[8387:75bb] [com.apple.defaults:User Defaults] CFPrefsManagedSource<0x600002c15f00> (Domain: com.apple.demo-settings, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: No) loaded: an empty base plist and no additional changes from the base plist
+2026-11-15 22:12:11.493 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key StoreDemoMode in CFPrefsSearchListSource<0x600002c15d80> (Domain: com.apple.demo-settings, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:11.494 E  App[8387:75bb] [com.apple.WebKit:ResourceLoadStatistics] Failed to request restricted opener domains from WebPrivacy
+2026-11-15 22:12:11.494 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.495 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.496 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.497 I  App[8387:75bb] [com.apple.launchservices:datasep] application record search init. Node: <FSNode 0x6000002aa6e0> { isDir = y, path = '/Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data/Containers/Bundle/Application/3948E73A-DAE0-49EC-9FEE-7871FBEF3BF8/App.app' } bundleID: (null) itemID: 0
+2026-11-15 22:12:11.497 Db App[8387:75bb] [com.apple.launchservices:binding] BindingEvaluator::CreateWithBundleInfo(ID=(null), name=App.app, CC=????, vers=(null))
+2026-11-15 22:12:11.497 Db App[8387:75bb] [com.apple.launchservices:binding] Skipping strong binding binding due to options
+2026-11-15 22:12:11.497 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.497 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.497 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key StoreDemoMode in CFPrefsSearchListSource<0x600002c15d80> (Domain: com.apple.demo-settings, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:11.498 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b41b0 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.498 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.498 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.499 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.510 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Will add backgroundTask with taskName: SKProductsRequest, expirationHandler: <__NSMallocBlock__: 0x600000c7df20>
+2026-11-15 22:12:11.510 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Creating new assertion because there is no existing background assertion.
+2026-11-15 22:12:11.510 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Creating new background assertion
+2026-11-15 22:12:11.510 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Created new background assertion <BKSProcessAssertion: 0x6000021178e0>
+2026-11-15 22:12:11.510 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "Shared Background Assertion 1 for com.flixtoys.atis" ID:(null) target:8387>
+2026-11-15 22:12:11.512 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-870 to dictionary
+2026-11-15 22:12:11.512 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Incrementing reference count for background assertion <BKSProcessAssertion: 0x6000021178e0>
+2026-11-15 22:12:11.512 Df App[8387:75bb] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x60000176fbc0>: taskID = 3, taskName = SKProductsRequest, creationTime = 502 (elapsed = 0).
+2026-11-15 22:12:11.514 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4210 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.514 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b41b0 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.515 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.515 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.515 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4210 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.516 A  App[8387:75ea] (StoreKit) StoreKit/SKProductsRequest
+2026-11-15 22:12:11.520 I  App[8387:75ea] [com.apple.storekit:Default] AAFService Starting new XPCConnection 5798a501
+2026-11-15 22:12:11.522 Df App[8387:75ea] [com.apple.xpc:connection] [0x101906830] activating connection: mach=true listener=false peer=false name=com.apple.storekitd
+2026-11-15 22:12:11.549 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4270 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.549 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4300 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.549 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.550 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.550 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.550 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4270 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.550 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.551 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4300 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.553 I  App[8387:75bb] [com.apple.launchservices:datasep] application record search init. Node: <FSNode 0x6000002ad360> { isDir = y, path = '/Users/runner/Library/Developer/CoreSimulator/Devices/00447DBE-32CF-4171-A4DB-0C2EAE058F02/data/Containers/Bundle/Application/3948E73A-DAE0-49EC-9FEE-7871FBEF3BF8/App.app' } bundleID: (null) itemID: 0
+2026-11-15 22:12:11.553 Db App[8387:75bb] [com.apple.launchservices:binding] BindingEvaluator::CreateWithBundleInfo(ID=(null), name=App.app, CC=????, vers=(null))
+2026-11-15 22:12:11.553 Db App[8387:75bb] [com.apple.launchservices:binding] Skipping strong binding binding due to options
+2026-11-15 22:12:11.553 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.553 Db App[8387:75bb] [com.apple.launchservices:binding] Truncating a list of bindings to max 1 known-good ones.
+2026-11-15 22:12:11.554 Db App[8387:75bb] [com.apple.launchservices:default] Got plist data 0x101621580 for unit 3b70 from database 0x102821800
+2026-11-15 22:12:11.557 Db App[8387:75bb] [com.apple.launchservices:default] Getting plist hint for data 0x101621580
+2026-11-15 22:12:11.557 Db App[8387:75bb] [com.apple.launchservices:default] Got values for keys { CFBundleIcons } from CF SPI (fast path).
+2026-11-15 22:12:11.557 Db App[8387:75bb] [com.apple.launchservices:default] Got plist data 0x10161dec0 for unit 3b70 from database 0x102821800
+2026-11-15 22:12:11.565 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4360 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.565 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:11.565 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:11.566 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4360 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:11.736 Df App[8387:75bb] [com.apple.WebKit:ViewState] 0x103838a00 (pageProxyID=7) -[WKWebView _didCommitLayerTree:] - finally received commit 6.02s after visible content rect update request; transactionID 5
+2026-11-15 22:12:12.411 Df App[8387:760e] (AppTrackingTransparency) [ATTrackingManager] requestTrackingAuthorizationWithCompletionHandler API call invoked.
+2026-11-15 22:12:12.411 Df App[8387:760e] (AppTrackingTransparency) [ATTrackingManager] Performing TCC Access Preflight Request.
+2026-11-15 22:12:12.411 Db App[8387:760e] [com.apple.TCC:cache] GET: (kTCCServiceUserTracking, <Credential (0x60000293cfc0) | Requestor>) -> <Authorization Record (0x60000350cb00) | Service: kTCCServiceUserTracking, AuthRight: Unknown, Reason: None, Version: 1, >
+2026-11-15 22:12:12.412 Db App[8387:760e] [com.apple.TCC:access] Using cached authorization: <Authorization Record (0x60000350cb00) | Service: kTCCServiceUserTracking, AuthRight: Unknown, Reason: None, Version: 1, >
+2026-11-15 22:12:12.412 Db App[8387:760e] [com.apple.TCC:access] disposing: 0x6000033054a0(OS_tcc_message_options)
+2026-11-15 22:12:12.413 Df App[8387:760e] (AppTrackingTransparency) [ATTrackingManager] Performing TCC Access Request.
+2026-11-15 22:12:12.413 Db App[8387:760e] [com.apple.TCC:cache] GET: (kTCCServiceUserTracking, <Credential (0x60000293cfc0) | Requestor>) -> <Authorization Record (0x60000350cb00) | Service: kTCCServiceUserTracking, AuthRight: Unknown, Reason: None, Version: 1, >
+2026-11-15 22:12:12.413 A  App[8387:760e] (TCC) tcc_send_request_authorization() IPC
+2026-11-15 22:12:12.413 Db App[8387:760e] [com.apple.TCC:access] disposing: 0x6000033054a0(OS_tcc_message_options)
+2026-11-15 22:12:12.413 Df App[8387:75e3] [com.apple.xpc:connection] [0x101952a20] activating connection: mach=true listener=false peer=false name=com.apple.tccd
+2026-11-15 22:12:12.413 I  App[8387:75e3] [com.apple.TCC:access] SEND: 0/7 asynchronous to com.apple.tccd: request: msgID=8387.4, function=TCCAccessRequest, service=kTCCServiceUserTracking,
+2026-11-15 22:12:12.674 I  App[8387:75bb] [com.apple.WebPrivacy:API] Dispatching list data changed notification for (RESTRICTED_OPENER_DOMAINS)
+2026-11-15 22:12:14.414 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x110124100 NavigationState is releasing background process assertion because a page load completed
+2026-11-15 22:12:14.415 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b42d0 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending background activity / 'Page Load'
+2026-11-15 22:12:15.162 A  App[8387:75e3] (StoreKit) StoreKit/ProductRequest/Parse
+2026-11-15 22:12:15.163 Df App[8387:75e3] [com.apple.storekit:Default] Received product response
+2026-11-15 22:12:15.165 Db App[8387:760e] [com.apple.storekit:Default] Decoding product response
+2026-11-15 22:12:15.247 Db App[8387:760e] [com.apple.storekit:Default] Decoded product response (NL67DCEWZHWAW2QAQAR3CNUBWI)
+2026-11-15 22:12:15.247 Df App[8387:760e] [com.apple.storekit:Default] Parsing 7 products in response
+2026-11-15 22:12:15.279 Db App[8387:7609] [com.apple.storekit:Default] Finished receiving responses
+2026-11-15 22:12:15.281 I  App[8387:7609] [com.apple.storekit:Default] AAFService Closing XPCConnection 5798a501
+2026-11-15 22:12:15.281 Df App[8387:7609] [com.apple.xpc:connection] [0x101906830] invalidated because the current process cancelled the connection by calling xpc_connection_cancel()
+2026-11-15 22:12:15.282 Df App[8387:7609] [com.apple.storekit:Default] Returning 7 product(s) and 0 invalid identifier(s)
+2026-11-15 22:12:15.282 Df App[8387:7609] [com.apple.storekit:Default] AAFService connection invalidated
+2026-11-15 22:12:15.291 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::Activity: Starting foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:15.291 Df App[8387:760e] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 3
+2026-11-15 22:12:15.291 Df App[8387:760e] [com.apple.UIKit:BackgroundTask] Ending task with identifier 3 and description: <_UIBackgroundTaskInfo: 0x60000176fbc0>: taskID = 3, taskName = SKProductsRequest, creationTime = 502 (elapsed = 3), _expireHandler: <__NSMallocBlock__: 0x600000c899e0>
+2026-11-15 22:12:15.292 Df App[8387:760e] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x6000021178e0> (used by background task with identifier 3: <_UIBackgroundTaskInfo: 0x60000176fbc0>: taskID = 3, taskName = SKProductsRequest, creationTime = 502 (elapsed = 3))
+2026-11-15 22:12:15.292 Df App[8387:760e] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x6000021178e0> for task identifier: 3
+2026-11-15 22:12:15.300 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: frameID=0
+2026-11-15 22:12:15.325 Df App[8387:76b5] [com.apple.WebKit:Process] WebContent[8404] 0x101812408 - [webPageID=8] WebPage::runJavaScriptInFrameInScriptWorld: Request to run JavaScript succeeded
+2026-11-15 22:12:15.327 Df App[8387:75e7] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002609560; environment: keyboardFocus; status: none> was:target
+2026-11-15 22:12:15.327 Db App[8387:75e7] [com.apple.BackBoard:EventDelivery] observerPolicyDidChange: 0x600002609560 -> <_GCLegacyDeviceSession: 0x600003d00780>
+2026-11-15 22:12:15.329 Df App[8387:75e7] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002602760; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.flixtoys.atis-default; status: none> was:ancestor
+2026-11-15 22:12:15.330 Db App[8387:75e7] [com.apple.BackBoard:EventDelivery] observerPolicyDidChange: 0x600002602760 -> <_UIKeyWindowSceneObserver: 0x600000c12e80>
+2026-11-15 22:12:15.330 Df App[8387:75bb] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 0; scene: UIWindowScene: 0x101809640; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.flixtoys.atis-default
+2026-11-15 22:12:15.337 Df App[8387:75bb] [com.apple.WebKit:ProcessSuspension] 0x1100b4120 - [PID=8404, throttler=0x1100dc150] ProcessThrottler::Activity::invalidate: Ending foreground activity / 'WebPageProxy::runJavaScriptInFrameInScriptWorld'
+2026-11-15 22:12:15.582 Df App[8387:75bb] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.flixtoys.atis-default  persistentID: 670D611F-C7CB-4715-8AAC-F3A4416D5DB6
+2026-11-15 22:12:15.585 Db App[8387:75bb] [com.apple.BacklightServices:scenes] 0x600000c13450 environment updated:sceneID:com.flixtoys.atis-default
+  delta:{ visualState:0 date:0 active:0 seed:0 }
+  diff:<FBSSceneSettingsDiff: 0x600001724380; UIApplicationSceneSettings> {
+    subclassSettings = <BSSettingsDiff: 0x600000c863d0> {
+        targetOfEventDeferringEnvironments = (empty);
+    };
+}
+  new:(null) (null)
+  old:(null) (null)
+  new:(null)
+2026-11-15 22:12:15.587 Db App[8387:75bb] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 1 of 2
+2026-11-15 22:12:15.594 Db App[8387:7609] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 2 of 2
+2026-11-15 22:12:15.594 Db App[8387:7609] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] dealloc
+2026-11-15 22:12:16.105 Db App[8387:75bb] [com.apple.runningboard:process] Decoded RBSProcessHandle with IPC ID 74ccf45000020c3
+2026-11-15 22:12:16.106 Df App[8387:75bb] [com.apple.runningboard:process] Hit the server for a process handle 74ccf45000020c3 that resolved to: [app<com.flixtoys.atis((null))>:8387]
+2026-11-15 22:12:16.112 Df App[8387:75bb] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.flixtoys.atis-default  persistentID: 670D611F-C7CB-4715-8AAC-F3A4416D5DB6
+2026-11-15 22:12:16.112 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key LogUIAlertControllerStackManager in CFPrefsSearchListSource<0x600002c08300> (Domain: com.apple.UIKit, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:16.112 Df App[8387:75bb] [com.apple.UIKit:UIAlertControllerStackManager] canShowAlerts Updated: <FBSSceneSettingsDiff: 0x600001777740; UIApplicationSceneSettings> {
+    subclassSettings = <BSSettingsDiff: 0x600000c6c600> {
+        canShowAlerts = NO;
+    };
+}
+2026-11-15 22:12:16.113 I  App[8387:75e7] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "systemAnimationFence" ID:(null) target:8387>
+2026-11-15 22:12:16.112 Db App[8387:75bb] [com.apple.BacklightServices:scenes] 0x600000c13450 environment updated:sceneID:com.flixtoys.atis-default
+  delta:{ visualState:0 date:0 active:0 seed:0 }
+  diff:<FBSSceneSettingsDiff: 0x600001777740; UIApplicationSceneSettings> {
+    subclassSettings = <BSSettingsDiff: 0x600000c6c600> {
+        canShowAlerts = NO;
+    };
+}
+  new:(null) (null)
+  old:(null) (null)
+  new:(null)
+2026-11-15 22:12:16.115 Db App[8387:75bb] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 1 of 2
+2026-11-15 22:12:16.115 Db App[8387:75e7] [com.apple.runningboard:assertion] Adding assertion 6385-8387-873 to dictionary
+2026-11-15 22:12:16.116 Df App[8387:75bb] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x101809640> (670D611F-C7CB-4715-8AAC-F3A4416D5DB6)
+2026-11-15 22:12:16.130 Df App[8387:75bb] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.flixtoys.atis-default  persistentID: 670D611F-C7CB-4715-8AAC-F3A4416D5DB6
+2026-11-15 22:12:16.130 Df App[8387:75bb] [com.apple.UIKit:Application] Deactivation reason added: 13; deactivation reasons: 0 -> 8192; animating application lifecycle event: 0
+2026-11-15 22:12:16.134 Db App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Re-evaluating if text editing is allowed; reason: 'Application resigned active'; notify: 1; allowed before: 1, allowed after: 0.
+2026-11-15 22:12:16.134 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Text editing allowed did change (editingAllowedAfter = NO)
+2026-11-15 22:12:16.134 I  App[8387:75e7] [com.apple.siri:Client] -[AFDictationConnection dealloc] 0x600003b195e0
+2026-11-15 22:12:16.142 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "BSNSXPCTransport[C:3-1]" ID:(null) target:<<OS_xpc_endpoint: <endpoint>>>>
+2026-11-15 22:12:16.150 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-874 to dictionary
+2026-11-15 22:12:16.150 Df App[8387:75bb] [com.apple.RemoteTextInput:InputSessionChange] -[RTIInputSystemClient _endSessionWithID:forServices:options:completion:]  End input session: D3F3A143-F053-4C87-A8C9-B2DCF755B638
+2026-11-15 22:12:16.155 I  App[8387:75bb] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "BSNSXPCTransport[C:3-1]" ID:(null) target:<<OS_xpc_endpoint: <endpoint>>>>
+2026-11-15 22:12:16.162 Db App[8387:75bb] [com.apple.runningboard:assertion] Adding assertion 6385-8387-875 to dictionary
+2026-11-15 22:12:16.163 Db App[8387:75bb] [com.apple.UIKit:ScrollPocket] statistics: max 0 hard pockets, 0 dynamic pockets, 0 other pockets, 0 total pockets, 0 glass groups
+2026-11-15 22:12:16.168 A  App[8387:75bb] (GameController) Notify ApplicationWillResignActive
+2026-11-15 22:12:16.178 Df App[8387:76b5] [com.apple.WebKit:Media] WebContent[8404] MediaSessionManageriOS::applicationWillBecomeInactive(0)
+2026-11-15 22:12:16.186 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key LogInputModeIndicator in CFPrefsSearchListSource<0x600002c08300> (Domain: com.apple.UIKit, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:16.186 Db App[8387:75bb] [com.apple.defaults:User Defaults] found no value for key UIKeyboardInputModeIndicatorIdleTime in CFPrefsSearchListSource<0x600002c08300> (Domain: com.apple.UIKit, Container: (null) Non-launch persona: 0)
+2026-11-15 22:12:16.186 Df App[8387:75bb] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 13; deactivation reasons: 8192
+2026-11-15 22:12:16.186 Df App[8387:75bb] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 8192 -> 12288; animating application lifecycle event: 0
+2026-11-15 22:12:16.187 Db App[8387:75bb] [com.apple.RemoteTextInput:RTILog] -[RTIInputSystemClient _modifyTextEditingAllowedForReason:notify:animated:modifyAllowancesBlock:completion:]  Re-evaluating if text editing is allowed; reason: 'Application suspended'; notify: 0; allowed before: 0, allowed after: 0.
+2026-11-15 22:12:16.188 Db App[8387:75bb] [com.apple.BacklightServices:scenes] 0x600000c13450 environment updated:sceneID:com.flixtoys.atis-default
+  delta:{ visualState:0 date:0 active:0 seed:0 }
+  diff:<FBSSceneSettingsDiff: 0x60000172b940; UIApplicationSceneSettings> {
+    subclassSettings = <BSSettingsDiff: 0x600000c86cd0> {
+        deactivationReasons = systemModalAlert;
+    };
+}
+  new:(null) (null)
+  old:(null) (null)
+  new:(null)
+2026-11-15 22:12:16.189 Db App[8387:75bb] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 1 of 2
+2026-11-15 22:12:16.203 Db App[8387:75e7] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 2 of 2
+2026-11-15 22:12:16.203 Db App[8387:75e7] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] dealloc
+2026-11-15 22:12:16.203 Db App[8387:75e7] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] signaled! 2 of 2
+2026-11-15 22:12:16.203 Db App[8387:75e7] [com.apple.BaseBoard:Common] [BSBlockSentinel:FBSScene] dealloc
+2026-11-15 22:12:21.404 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]: PerformanceMonitor::measurePostLoadMemoryUsage: Process was using 72933312 bytes of memory after the page load.
+2026-11-15 22:12:26.428 Df App[8387:76b5] [com.apple.WebKit:PerformanceLogging] WebContent[8404]: PerformanceMonitor::measurePostLoadCPUUsage: Process was using 13.6% CPU after the page load.
+2026-11-15 22:17:52.184 Df App[8387:760e] [com.apple.xpc:connection] [0x10194c330] Re-initialization successful; calling out to event handler with XPC_ERROR_CONNECTION_INTERRUPTED
+2026-11-15 22:17:53.173 E  App[8387:760e] [com.apple.AppSSO:SOServiceConnection] <SOServiceConnection: 0x60000029bd60>: XPC connection interrupted
+2026-11-15 22:18:20.169 Df App[8387:75e3] [com.apple.xpc:connection] [0x101916220] Re-initialization successful; calling out to event handler with XPC_ERROR_CONNECTION_INTERRUPTED
+2026-11-15 22:18:20.280 E  App[8387:75e3] [com.apple.WebPrivacy:XPC] Handled error from server: Connection interrupted
+Child process terminated with signal 15: Terminated
