@@ -12,7 +12,7 @@ on:
       version:
         description: 'App Store sürümü (örn. 1.5.1)'
         required: true
-        default: '1.5.3'
+        default: '1.5.4'
       test_ads:
         description: 'Gerçek reklam yerine Google test reklamları (sadece deneme için)'
         type: boolean
