@@ -1,5 +1,7 @@
 Flix Atış kaynak dosyaları.
 
+v12 (1.5.5): dükkân listesi (FLIX / İz / İnsan / Hayvan / Tüy) telefonda yine aşağı kaydırılıyor. Oyun sayfadaki bütün touchmove'ları engelliyordu; artık dokunuş kaydırılabilir bir listenin içinde başlarsa geçiyor. `python3 patch12.py` (../index.html ve game10.js'i yerinde yamalar), sonra `cd ../app && python3 tools/build_www.py`.
+
 v11 (1.5.3+): Ayarlar'a "Gizlilik Seçenekleri" satırı (Google UMP privacy options; sadece uygulamada ve Google gerekli derse görünür, Google'ın rıza formunu yeniden açar).
 Derlenmiş oyuna uygulanır: `python3 patch11.py` (../index.html'i yerinde yamalar, iki kez çalıştırılırsa bir şey yapmaz). Reklam tarafı app/www/ads.js (privacyOptionsRequired / showPrivacyOptions).
 

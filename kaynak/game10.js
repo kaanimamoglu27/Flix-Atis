@@ -1842,7 +1842,7 @@ addEventListener('pointerup', (e) => {
   if (pw !== null && pw > 0.01 && state === 'play' && P.phase === 'aim') shoot(pw);
 });
 addEventListener('pointercancel', () => { aim = null; previewAim(); if (holdId !== null) featherOff(); });
-document.addEventListener('touchmove', (e) => e.preventDefault(), {passive: false});
+document.addEventListener('touchmove', (e) => { for (let el = e.target; el && el !== document.body && el.nodeType === 1; el = el.parentElement) { const cs = getComputedStyle(el); if ((/(auto|scroll)/.test(cs.overflowY) && el.scrollHeight > el.clientHeight + 1) || (/(auto|scroll)/.test(cs.overflowX) && el.scrollWidth > el.clientWidth + 1)) return; } e.preventDefault(); }, {passive: false});
 document.addEventListener('gesturestart', (e) => e.preventDefault());
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 tb.addEventListener('pointerdown', (e) => { e.preventDefault(); e.stopPropagation(); audio(); if (P.phase === 'fly') { holdId = e.pointerId; featherOn(); } });
