@@ -8,7 +8,7 @@
 window.FLIX_ADS_CONFIG = {
   // true: always Google's test ads. tools/ios_setup.py sets this in the app's copy: true for development builds
   // (./ios.sh hazirla / simulator / xcode, build check), false for release builds (./ios.sh yukle, TestFlight workflow; env ADS_MODE=real).
-  forceTestAds: true,
+  forceTestAds: false,
   ids: {
     // App id, form ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX (with ~). tools/ios_setup.py puts it into Info.plist (GADApplicationIdentifier).
     IOS_APP_ID: 'ca-app-pub-9939733946730095~4563076784',
