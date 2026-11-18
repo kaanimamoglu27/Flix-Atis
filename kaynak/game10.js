@@ -2349,7 +2349,7 @@ function webAd(kind) { // the web build has no ad network: shows our own FLIX ad
 let lastRewardAt = 0;
 async function adRewarded(which) { let r; if (window.FlixAds) r = await window.FlixAds.showRewarded(which === 'shots' ? 8000 : 5000, which || 'fe'); else if (NATIVE) r = 'unavailable'; else r = await webAd('rewarded'); if (r !== 'unavailable') lastRewardAt = Date.now(); return r; }
 async function adInterstitial() { if (SAVE.noads || Date.now() - lastRewardAt < 90000) return false; if (window.FlixAds) return window.FlixAds.showInterstitial(); if (NATIVE) return false; return webAd('inter'); }
-function adTurn() { SAVE.adN = (SAVE.adN || 0) + 1; save(); if (SAVE.noads || BOT || cur < AD_CFG.interFromLevel) return Promise.resolve(false); if (SAVE.adN % AD_CFG.interEvery) return Promise.resolve(false); return adInterstitial(); }
+function adTurn() { SAVE.adN = (SAVE.adN || 0) + 1; save(); if (SAVE.noads || BOT || SAVE.adN < AD_CFG.interFromLevel || SAVE.adN % AD_CFG.interEvery) return Promise.resolve(false); return adInterstitial(); } // adN = finished levels: 3, 6, 9...
 function maybeInterstitial() { SAVE.wins++; save(); return adTurn(); }
 function freeFeState() { const d = new Date().toDateString(); if (SAVE.ads.day !== d) { SAVE.ads.day = d; SAVE.ads.n = 0; } const wait = SAVE.ads.last + AD_CFG.freeCooldownMin * 60000 - Date.now(); return {left: AD_CFG.freePerDay - SAVE.ads.n, wait: Math.max(0, wait)}; }
 
@@ -2484,5 +2484,5 @@ function maybeLoseAd() { SAVE.loses++; save(); return adTurn(); }
 dailyUI();
 
 
-window.__A = {boxes: () => boxes, facadeTex, buyWorld, worldReady, WORLDS, worldOpen, curWorld, nextLevel, playLevel, openPack, openDaily, levelLocked, startJuggle, get shopTab() { return shopTab; }, openShop, grant, addFe, lose, reviveRun, maybeInterstitial, actors: () => actors, reactActor, win, openLevels, X: {scene, camera, toyRoot, toyM, renderer, get bucket() { return bucket; }, get world() { return world; }, stars: () => stars}, P, LEVELS, startLevel, solveShot, state: () => state, SAVE, get LV() { return LV; }, cam: () => camMode, SKINS, TRAILS};
+if (!NATIVE || BOT) window.__A = {boxes: () => boxes, facadeTex, buyWorld, worldReady, WORLDS, worldOpen, curWorld, nextLevel, playLevel, openPack, openDaily, levelLocked, startJuggle, get shopTab() { return shopTab; }, openShop, grant, addFe, lose, reviveRun, maybeInterstitial, actors: () => actors, reactActor, win, openLevels, X: {scene, camera, toyRoot, toyM, renderer, get bucket() { return bucket; }, get world() { return world; }, stars: () => stars}, P, LEVELS, startLevel, solveShot, state: () => state, SAVE, get LV() { return LV; }, cam: () => camMode, SKINS, TRAILS};
 resize(); openHome(); requestAnimationFrame(frame);

@@ -109,6 +109,7 @@ button{font-family:Rubik,sans-serif;touch-action:manipulation;cursor:pointer;bor
 .srow{display:flex;justify-content:space-between;align-items:center;gap:30px;width:260px;background:#fff;border:3px solid var(--navy);border-radius:16px;padding:14px 16px;font-weight:800;font-size:17px;margin-bottom:10px;box-shadow:0 4px 0 rgba(2,39,83,.35)}
 .srow span:last-child{background:#2fa84f;color:#fff;border-radius:10px;padding:4px 10px;font-size:13px}
 .srow.off span:last-child{background:#9aa3b2}
+#setClose{right:18px;bottom:calc(var(--sab) + 26px);width:112px;height:112px}#setS{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:calc(var(--sat) + 14px) 14px calc(var(--sab) + 150px)}#setS>:first-child{margin-top:auto}#setS>:last-child{margin-bottom:auto}#setS .srow{width:100%;max-width:280px;gap:12px;flex:none;text-align:left}#setS .srow span:last-child{flex:none;white-space:nowrap}@media (max-height:860px){#setS{padding-bottom:calc(var(--sab) + 124px)}#setS h2{font-size:48px;margin-bottom:10px}#setS .srow{padding:9px 14px;margin-bottom:7px;font-size:16px}#setS .srow small{font-size:11px}#setClose{width:96px;height:96px;bottom:calc(var(--sab) + 16px)}}@media (max-height:600px){#setS{padding-top:calc(var(--sat) + 8px);padding-bottom:calc(var(--sab) + 108px)}#setS h2{font-size:40px;margin-bottom:6px}#setS .srow{padding:7px 12px;margin-bottom:6px;border-radius:14px}#setS .srow small{line-height:1.15}#setS .ver{margin-top:2px}#setClose{width:88px;height:88px;bottom:calc(var(--sab) + 12px)}#setClose b{font-size:20px}}@media (max-width:359px){#levels h2{font-size:38px}}
 
 /* v4: portrait column, currency, shop, ads, payments */
 @media (min-aspect-ratio: 13/20){body{background:radial-gradient(circle at 50% 40%,#1b3a66,#0a1628)}#app{box-shadow:0 0 0 2px rgba(255,255,255,.06),0 0 80px rgba(0,0,0,.55)}}
@@ -341,8 +342,8 @@ button{font-family:Rubik,sans-serif;touch-action:manipulation;cursor:pointer;bor
     <button class="srow link" id="privRow" hidden><span>Gizlilik Seçenekleri<small>Privacy Options · reklam izinleri</small></span><span id="privT">Aç</span></button>
     <button class="srow link" data-flixlegal="legal"><span>Yasal Bilgiler<small>Legal &amp; Information</small></span><span>Aç</span></button>
     <button class="srow link" data-flixlegal="about"><span>Hakkında<small>About · Credits</small></span><span>Aç</span></button>
-    <div class="ver">Flix Atış 1.2 · FLIX TOYS</div></div>
-  <button class="btn" id="setClose" style="right:18px;bottom:calc(var(--sab) + 26px);width:112px;height:112px"><b>TAMAM</b></button>
+    <div class="ver">Flix Atış 1.5.6 · FLIX TOYS</div></div>
+  <button class="btn" id="setClose"><b>TAMAM</b></button>
 </div>
 <div class="layer" id="shopL" hidden>
   <div class="topbar"><div class="tag">FLIX DÜKKÂNI</div><button class="cur feBtn" aria-label="Tüy"><svg viewBox="0 0 20 24" width="15" height="18"><path d="M10 23C3 15 4 6 10 1c6 5 7 14 0 22z" fill="#2fa84f" stroke="#fff" stroke-width="1.8"/></svg><span class="feN">0</span><i class="plus">+</i></button></div>
@@ -2720,7 +2721,7 @@ function webAd(kind) { // the web build has no ad network: shows our own FLIX ad
 let lastRewardAt = 0;
 async function adRewarded(which) { let r; if (window.FlixAds) r = await window.FlixAds.showRewarded(which === 'shots' ? 8000 : 5000, which || 'fe'); else if (NATIVE) r = 'unavailable'; else r = await webAd('rewarded'); if (r !== 'unavailable') lastRewardAt = Date.now(); return r; }
 async function adInterstitial() { if (SAVE.noads || Date.now() - lastRewardAt < 90000) return false; if (window.FlixAds) return window.FlixAds.showInterstitial(); if (NATIVE) return false; return webAd('inter'); }
-function adTurn() { SAVE.adN = (SAVE.adN || 0) + 1; save(); if (SAVE.noads || BOT || cur < AD_CFG.interFromLevel) return Promise.resolve(false); if (SAVE.adN % AD_CFG.interEvery) return Promise.resolve(false); return adInterstitial(); }
+function adTurn() { SAVE.adN = (SAVE.adN || 0) + 1; save(); if (SAVE.noads || BOT || SAVE.adN < AD_CFG.interFromLevel || SAVE.adN % AD_CFG.interEvery) return Promise.resolve(false); return adInterstitial(); } // adN = finished levels: 3, 6, 9...
 function maybeInterstitial() { SAVE.wins++; save(); return adTurn(); }
 function freeFeState() { const d = new Date().toDateString(); if (SAVE.ads.day !== d) { SAVE.ads.day = d; SAVE.ads.n = 0; } const wait = SAVE.ads.last + AD_CFG.freeCooldownMin * 60000 - Date.now(); return {left: AD_CFG.freePerDay - SAVE.ads.n, wait: Math.max(0, wait)}; }
 
@@ -2855,7 +2856,7 @@ function maybeLoseAd() { SAVE.loses++; save(); return adTurn(); }
 dailyUI();
 
 
-window.__A = {boxes: () => boxes, facadeTex, buyWorld, worldReady, WORLDS, worldOpen, curWorld, nextLevel, playLevel, openPack, openDaily, levelLocked, startJuggle, get shopTab() { return shopTab; }, openShop, grant, addFe, lose, reviveRun, maybeInterstitial, actors: () => actors, reactActor, win, openLevels, X: {scene, camera, toyRoot, toyM, renderer, get bucket() { return bucket; }, get world() { return world; }, stars: () => stars}, P, LEVELS, startLevel, solveShot, state: () => state, SAVE, get LV() { return LV; }, cam: () => camMode, SKINS, TRAILS};
+if (!NATIVE || BOT) window.__A = {boxes: () => boxes, facadeTex, buyWorld, worldReady, WORLDS, worldOpen, curWorld, nextLevel, playLevel, openPack, openDaily, levelLocked, startJuggle, get shopTab() { return shopTab; }, openShop, grant, addFe, lose, reviveRun, maybeInterstitial, actors: () => actors, reactActor, win, openLevels, X: {scene, camera, toyRoot, toyM, renderer, get bucket() { return bucket; }, get world() { return world; }, stars: () => stars}, P, LEVELS, startLevel, solveShot, state: () => state, SAVE, get LV() { return LV; }, cam: () => camMode, SKINS, TRAILS};
 resize(); openHome(); requestAnimationFrame(frame);
 
 </script>
@@ -3056,7 +3057,7 @@ resize(); openHome(); requestAnimationFrame(frame);
     urls: function () { var o = {}; DOCS.forEach(function (d) { o[d[0]] = url(d); }); o.hub = BASE + HUB; o.site = SITE; o.mail = MAIL; return o; }
   };
 })();
-FlixLegal.init({"game": "atis", "name": "Flix Atış", "theme": {"font": "Rubik,system-ui,sans-serif", "head": "'Barlow Condensed',Impact,sans-serif", "ink": "#022753", "card": "#fff8ea", "soft": "#fff", "accent": "#022753", "accentInk": "#fff", "btn": "#ffc20e", "btnInk": "#022753", "shadow": "rgba(2,39,83,.35)", "border": "3px solid #022753", "line": "rgba(2,39,83,.3)", "link": "#e22511"}, "oss": ["three.js (MIT)", "Capacitor (MIT)", "cordova-plugin-purchase (MIT)", "@capacitor-community/admob (MIT) · Google Mobile Ads SDK", "Barlow Condensed, Rubik, Orbitron (SIL OFL 1.1)"]});
+FlixLegal.init({"game": "atis", "name": "Flix Atış", "version": "1.5.6", "theme": {"font": "Rubik,system-ui,sans-serif", "head": "'Barlow Condensed',Impact,sans-serif", "ink": "#022753", "card": "#fff8ea", "soft": "#fff", "accent": "#022753", "accentInk": "#fff", "btn": "#ffc20e", "btnInk": "#022753", "shadow": "rgba(2,39,83,.35)", "border": "3px solid #022753", "line": "rgba(2,39,83,.3)", "link": "#e22511"}, "oss": ["three.js (MIT)", "Capacitor (MIT)", "cordova-plugin-purchase (MIT)", "@capacitor-community/admob (MIT) · Google Mobile Ads SDK", "Barlow Condensed, Rubik, Orbitron (SIL OFL 1.1)"]});
 </script>
 <script>/* FLIX privacy options (v11): Google UMP entry point, app only */
 (function () {

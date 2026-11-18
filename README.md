@@ -10,6 +10,8 @@ App Store: Flix Atış (tr) / Flix Shot (en), App ID 6832637118, SKU FLIXSHOT001
 
 FLIX TOYS · flixtoysofficial.com
 
+Sürüm: **1.5.6** (bir sonraki App Store sürümü; Ayarlar'da ve Hakkında panelinde yazan sürüm, TestFlight iş akışına da 1.5.6 yazılmalı). Değişiklikler: `kaynak/README.md` v13.
+
 ## TestFlight
 Actions > **iOS TestFlight** > Run workflow. Kurulum ve gerekli secrets: [TESTFLIGHT.md](TESTFLIGHT.md)
 
